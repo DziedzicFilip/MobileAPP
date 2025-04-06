@@ -3414,11 +3414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT.Android\\SeenIT.Android.csproj",
+      "projectUniqueName": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT.Android\\SeenIT.Android.csproj",
       "projectName": "SeenIT.Android",
-      "projectPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT.Android\\SeenIT.Android.csproj",
+      "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT.Android\\SeenIT.Android.csproj",
       "packagesPath": "C:\\Users\\dzied\\.nuget\\packages\\",
-      "outputPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT.Android\\obj\\",
+      "outputPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -3440,8 +3440,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj": {
-              "projectPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj"
+            "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj": {
+              "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj"
             }
           }
         }

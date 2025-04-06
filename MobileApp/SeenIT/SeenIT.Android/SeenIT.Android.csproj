@@ -34,6 +34,11 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -93,5 +98,15 @@
       <Name>SeenIT</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\O2137.jpg" />
+    <AndroidResource Include="Resources\drawable\Devil_May_Cry.jpg" />
+    <AndroidResource Include="Resources\drawable\dojrzewanie.jpg" />
+    <AndroidResource Include="Resources\drawable\LegendaOchi.3.jpg" />
+    <AndroidResource Include="Resources\drawable\Minecraft.jpg" />
+    <AndroidResource Include="Resources\drawable\screamboat.jpg" />
+    <AndroidResource Include="Resources\drawable\SW3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

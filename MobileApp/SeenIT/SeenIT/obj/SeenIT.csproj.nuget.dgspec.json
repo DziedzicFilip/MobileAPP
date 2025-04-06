@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj": {}
+    "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj": {}
   },
   "projects": {
-    "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj": {
+    "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj",
+        "projectUniqueName": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj",
         "projectName": "SeenIT",
-        "projectPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj",
+        "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj",
         "packagesPath": "C:\\Users\\dzied\\.nuget\\packages\\",
         "outputPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\obj\\",
         "projectStyle": "PackageReference",

@@ -11371,11 +11371,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
+      "projectUniqueName": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
       "projectName": "SeenIT.UWP",
-      "projectPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
+      "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
       "packagesPath": "C:\\Users\\dzied\\.nuget\\packages\\",
-      "outputPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT.UWP\\obj\\",
+      "outputPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -11398,8 +11398,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj": {
-              "projectPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj"
+            "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj": {
+              "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj"
             }
           }
         }
