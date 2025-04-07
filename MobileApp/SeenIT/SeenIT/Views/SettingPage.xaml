@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeenIT.Views.SettingPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="Primary">#0078D7</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Górny panel -->
+        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="Settings" FontSize="Title" HorizontalOptions="Center" VerticalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
+
+        <!-- Główna zawartość -->
+        <ScrollView Grid.Row="1" BackgroundColor="{StaticResource Accent}">
+            <StackLayout Padding="10" Spacing="10">
+                <!-- Przełącznik 1 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Enable Notifications" VerticalOptions="Center" />
+                    <Switch VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Przełącznik 2 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Dark Mode" VerticalOptions="Center" />
+                    <Switch VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Suwak 1 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Volume" VerticalOptions="Center" />
+                    <Slider Minimum="0" Maximum="100" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <!-- Suwak 2 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Brightness" VerticalOptions="Center" />
+                    <Slider Minimum="0" Maximum="100" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Dolny panel -->
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Accent}" Padding="10" HorizontalOptions="FillAndExpand">
+            <Button Text="Home" Command="{Binding OpenAboutPage}" HorizontalOptions="CenterAndExpand" />
+            <Button Text="Settings" Command="{Binding SettingsCommand}" HorizontalOptions="CenterAndExpand" />
+            <Button Text="Profile" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
