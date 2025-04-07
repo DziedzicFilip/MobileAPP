@@ -98,7 +98,10 @@
       <Name>SeenIT</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Facebook.png" />
+    <AndroidResource Include="Resources\drawable\Google.png" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\O2137.jpg" />
     <AndroidResource Include="Resources\drawable\Devil_May_Cry.jpg" />

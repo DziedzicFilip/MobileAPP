@@ -646,3 +646,5 @@ D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\leg
 D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\minecraft.jpg
 D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\screamboat.jpg
 D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\sw3.jpg
+D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\facebook.png
+D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\google.png

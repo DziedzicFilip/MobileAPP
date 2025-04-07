@@ -67,7 +67,7 @@
         "projectName": "SeenIT",
         "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\SeenIT.csproj",
         "packagesPath": "C:\\Users\\dzied\\.nuget\\packages\\",
-        "outputPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\obj\\",
+        "outputPath": "D:\\Studia\\Mobilne\\MobileAPP\\SeenIT\\SeenIT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
