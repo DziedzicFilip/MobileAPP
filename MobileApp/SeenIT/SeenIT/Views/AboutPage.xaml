@@ -7,8 +7,8 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
-            <Color x:Key="Primary">#0078D7</Color>
+            <Color x:Key="Accent">#FFCC00</Color>
+            <Color x:Key="Primary">#FF9500</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -108,7 +108,7 @@
         </ScrollView>
 
         <!-- Dolny panel -->
-        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Accent}" Padding="10" HorizontalOptions="FillAndExpand">
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Primary}" Padding="10" HorizontalOptions="FillAndExpand">
             <Button Text="Home" Command="{Binding OpenAboutPageCommand}" HorizontalOptions="CenterAndExpand" />
             <Button Text="List" Command="{Binding OpenListPageCommand}" HorizontalOptions="CenterAndExpand" />
             <Button Text="Profile" Command="{Binding OpenProfilePageCommand}" HorizontalOptions="CenterAndExpand" />

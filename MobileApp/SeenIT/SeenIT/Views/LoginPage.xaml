@@ -6,6 +6,13 @@
              mc:Ignorable="d"
              x:Class="SeenIT.Views.LoginPage"
              Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#FFCC00</Color>
+            <Color x:Key="Primary">#FF9500</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <Grid Padding="10,0,10,0" VerticalOptions="Center">
             <Grid.RowDefinitions>

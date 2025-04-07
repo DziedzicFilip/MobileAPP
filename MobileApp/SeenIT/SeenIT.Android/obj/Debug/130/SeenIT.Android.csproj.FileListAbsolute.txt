@@ -648,3 +648,4 @@ D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\scr
 D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\sw3.jpg
 D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\facebook.png
 D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\google.png
+D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\user.png

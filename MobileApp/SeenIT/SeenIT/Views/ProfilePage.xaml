@@ -4,8 +4,8 @@
              x:Class="SeenIT.Views.ProfilePage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
-            <Color x:Key="Primary">#0078D7</Color>
+            <Color x:Key="Accent">#FFCC00</Color>
+            <Color x:Key="Primary">#FF9500</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -24,14 +24,52 @@
 
         <!-- Główna zawartość -->
         <ScrollView Grid.Row="1">
+            <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center">
+                <!-- Zdjęcie użytkownika -->
+                <Frame WidthRequest="150" HeightRequest="150" CornerRadius="75" IsClippedToBounds="True" BorderColor="{StaticResource Primary}" HorizontalOptions="Center">
+                    <Image Source="user.png" Aspect="AspectFill" />
+                </Frame>
 
+                <!-- Nazwa użytkownika -->
+                <Label Text="Nazwa Użytkownika" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+
+                <!-- Statystyki -->
+                <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center">
+                    <Label Text="Ilość obejrzanych filmów: 50" FontSize="16" />
+                    <Label Text="Ilość obejrzanych seriali: 20" FontSize="16" />
+                    <Label Text="Ilość dodanych recenzji: 15" FontSize="16" />
+                    <!-- Dodaj inne statystyki tutaj -->
+                </StackLayout>
+
+                <!-- Sekcja Ustawienia -->
+              
+
+                <!-- Sekcja Dane -->
+                <Label Text="Dane" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center">
+                    <Label Text="E-mail: user@example.com" FontSize="16" />
+                    <Label Text="Numer telefonu: 123-456-789" FontSize="16" />
+                    <Label Text="Data założenia konta: 01-01-2020" FontSize="16" />
+                    <!-- Dodaj inne dane tutaj -->
+                </StackLayout>
+                <Label Text="Ustawienia" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center">
+                    <Entry Placeholder="Zmień hasło" IsPassword="True" />
+                    <Entry Placeholder="Zmień e-mail" Keyboard="Email" />
+                    <Entry Placeholder="Zmień numer telefonu" Keyboard="Telephone" />
+                    <Button Text="Zapisz zmiany" Command="{Binding SaveSettingsCommand}" />
+                </StackLayout>
+            </StackLayout>
         </ScrollView>
 
         <!-- Dolny panel -->
-        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Accent}" Padding="10" HorizontalOptions="FillAndExpand">
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Primary}" Padding="10" HorizontalOptions="FillAndExpand">
             <Button Text="Home" Command="{Binding HomeCommand}" HorizontalOptions="CenterAndExpand" />
             <Button Text="List" Command="{Binding ListCommand}" HorizontalOptions="CenterAndExpand" />
             <Button Text="Profile" Command="{Binding ProfileCommand}" HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </Grid>
 </ContentPage>
+
+
+
