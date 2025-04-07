@@ -20,3 +20,5 @@ D:\Studia\Mobilne\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\SeenIT.dll
 D:\Studia\Mobilne\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\refint\SeenIT.dll
 D:\Studia\Mobilne\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\SeenIT.pdb
 D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\SettingPage.xaml.g.cs
+D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\ListPage.xaml.g.cs
+D:\Studia\Mobilne\MobileAPP\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs

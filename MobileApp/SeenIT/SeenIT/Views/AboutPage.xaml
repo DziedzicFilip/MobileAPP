@@ -109,9 +109,9 @@
 
         <!-- Dolny panel -->
         <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Accent}" Padding="10" HorizontalOptions="FillAndExpand">
-            <Button Text="Home" Command="{Binding OpenAboutPage}" HorizontalOptions="CenterAndExpand" />
-            <Button Text="Settings" Command="{Binding SettingsCommand}" HorizontalOptions="CenterAndExpand" />
-            <Button Text="Profile" HorizontalOptions="CenterAndExpand" />
+            <Button Text="Home" Command="{Binding OpenAboutPageCommand}" HorizontalOptions="CenterAndExpand" />
+            <Button Text="MyList" Command="{Binding OpenListPageCommand}" HorizontalOptions="CenterAndExpand" />
+            <Button Text="Profile" Command="{Binding OpenProfilePageCommand}" HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </Grid>
 

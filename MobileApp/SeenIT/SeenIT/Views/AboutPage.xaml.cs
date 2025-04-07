@@ -11,7 +11,7 @@ namespace SeenIT.Views
         public AboutPage()
         {
             InitializeComponent();
-            BindingContext = new SettingsViewModel();
+            BindingContext = new AboutViewModel();
         }
     }
 }
