@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeenIT.Views.ObjectPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="Primary">#0078D7</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Górny panel -->
+        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+            </StackLayout>
+        </StackLayout>
+
+        <!-- Główna zawartość -->
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="10" Spacing="10">
+                <Grid ColumnSpacing="10" RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Obraz filmu -->
+                    <Image Source="Minecraft.jpg" HeightRequest="300" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" />
+
+                    <!-- Tytuł filmu -->
+                    <Label Text="Minecraft " FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" />
+
+                    <!-- Opis filmu -->
+                    <ScrollView Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+                        <Label Text="Film opowiada historię młodej dziewczyny i grupy nieoczekiwanych bohaterów, którzy muszą ocalić swój blokowy 
+                               świat po tym, jak zły Ender Dragon rozpoczyna atak i zostawia po sobie ścieżkę zniszczenia. Bohaterowie wyruszają w 
+                               pełną przygód podróż, by ocalić Overworld – świat z gry Minecraft – i pokonać nadciągające zagrożenie.
+                               Film będzie pełen humoru, akcji i oczywiście wielu odniesień do samej gry – od kraftowania, przez walkę z mobami, 
+                               po eksplorację znanych biomy." 
+                               FontSize="16" HorizontalOptions="Center" />
+                    </ScrollView>
+
+                    <!-- Przycisk Dodaj recenzję -->
+                    <Button Text="Dodaj recenzję" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0" />
+
+                    <!-- Przycisk Dodaj do obejrzanych -->
+                    <Button Text="Dodaj do obejrzanych" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1" />
+
+                    <!-- Statystyki filmu -->
+                    <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" ColumnSpacing="10" RowSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Opis statystyk -->
+                        <Label Text="Średnia ocen:" FontSize="16" Grid.Row="0" Grid.Column="0" />
+                        <Label Text="Długość filmu:" FontSize="16" Grid.Row="1" Grid.Column="0" />
+                        <Label Text="Gatunek:" FontSize="16" Grid.Row="2" Grid.Column="0" />
+                        <Label Text="Reżyseria:" FontSize="16" Grid.Row="3" Grid.Column="0" />
+                        <Label Text="W rolach głównych:" FontSize="16" Grid.Row="4" Grid.Column="0" />
+
+                        <!-- Dane statystyk -->
+                        <Label Text="8.5" FontSize="16" Grid.Row="0" Grid.Column="1" />
+                        <Label Text="120 min" FontSize="16" Grid.Row="1" Grid.Column="1" />
+                        <Label Text="Przygodowy, Fantasy" FontSize="16" Grid.Row="2" Grid.Column="1" />
+                        <Label Text="Jared Hess" FontSize="16" Grid.Row="3" Grid.Column="1" />
+                        <Label Text="Jack Black" FontSize="16" Grid.Row="4" Grid.Column="1" />
+                    </Grid>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Dolny panel -->
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Accent}" Padding="10" HorizontalOptions="FillAndExpand">
+            <Button Text="Home" Command="{Binding HomeCommand}" HorizontalOptions="CenterAndExpand" />
+            <Button Text="List" Command="{Binding ListCommand}" HorizontalOptions="CenterAndExpand" />
+            <Button Text="Profile" Command="{Binding ProfileCommand}" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
+

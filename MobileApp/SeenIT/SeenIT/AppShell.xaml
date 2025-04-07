@@ -94,6 +94,9 @@
         <ShellContent Route="ListPage" ContentTemplate="{DataTemplate local:ListPage}" />
     </FlyoutItem>
 
+    
+  
+
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>
@@ -107,6 +110,9 @@
     -->
     <TabBar>
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+    </TabBar>
+    <TabBar>
+        <ShellContent Route="ObjectPage" ContentTemplate="{DataTemplate local:ObjectPage}" />
     </TabBar>
 
     <!-- Optional Templates 
@@ -143,3 +149,4 @@
     -->
 
 </Shell>
+

@@ -30,7 +30,7 @@
         <!-- Dolny panel -->
         <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Accent}" Padding="10" HorizontalOptions="FillAndExpand">
             <Button Text="Home" Command="{Binding HomeCommand}" HorizontalOptions="CenterAndExpand" />
-            <Button Text="MyList" Command="{Binding ListCommand}" HorizontalOptions="CenterAndExpand" />
+            <Button Text="List" Command="{Binding ListCommand}" HorizontalOptions="CenterAndExpand" />
             <Button Text="Profile" Command="{Binding ProfileCommand}" HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </Grid>
