@@ -541,23 +541,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dzied\\.nuget\\packages\\": {},
+    "C:\\Users\\Damian\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj",
+      "projectUniqueName": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj",
       "projectName": "SeenIT",
-      "projectPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj",
-      "packagesPath": "C:\\Users\\dzied\\.nuget\\packages\\",
-      "outputPath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT\\obj\\",
+      "projectPath": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj",
+      "packagesPath": "C:\\Users\\Damian\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dzied\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Damian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
