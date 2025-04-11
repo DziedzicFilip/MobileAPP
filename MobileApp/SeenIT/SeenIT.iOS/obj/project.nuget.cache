@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/Vz0+2hvHTc=",
+  "dgSpecHash": "nwZqXR7BsyY=",
   "success": true,
-  "projectFilePath": "D:\\Studia\\Mobilne\\MobileApp\\SeenIT\\SeenIT.iOS\\SeenIT.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT.iOS\\SeenIT.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dzied\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\dzied\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\dzied\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\Damian\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Damian\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Damian\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }

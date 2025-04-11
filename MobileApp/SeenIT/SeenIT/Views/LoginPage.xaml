@@ -6,9 +6,44 @@
              mc:Ignorable="d"
              x:Class="SeenIT.Views.LoginPage"
              Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#FFCC00</Color>
+            <Color x:Key="Primary">#FF9500</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
-        </StackLayout>
+        <Grid Padding="10,0,10,0" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+     
+            <Label Text="SeenIT" FontSize="36" FontAttributes="Bold" HorizontalOptions="Center" Grid.Row="0" />
+
+       
+            <Entry Placeholder="Login" Grid.Row="1" />
+
+      
+            <Entry Placeholder="Password" IsPassword="True" Grid.Row="2" />
+
+    
+            <Button Text="Login" Command="{Binding LoginCommand}" Grid.Row="3" HeightRequest="50" />
+
+            <Button Text="Register" Command="{Binding RegisterCommand}" Grid.Row="4"  HeightRequest="50" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="5" Spacing="10">
+                <Image Source="Google.png" WidthRequest="50" HeightRequest="50" />
+                <Image Source="Facebook.png" WidthRequest="50" HeightRequest="50" />
+            </StackLayout>
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
+
