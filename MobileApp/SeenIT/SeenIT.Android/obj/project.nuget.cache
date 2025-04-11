@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Jy6rZcmCqVU=",
+  "dgSpecHash": "N2hBqY+mP8Q=",
   "success": true,
   "projectFilePath": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT.Android\\SeenIT.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Damian\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\Damian\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Damian\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\Damian\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",

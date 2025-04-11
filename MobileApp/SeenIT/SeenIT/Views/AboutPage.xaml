@@ -109,9 +109,38 @@
 
         <!-- Dolny panel -->
         <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Primary}" Padding="10" HorizontalOptions="FillAndExpand">
-            <Button Text="Home" Command="{Binding OpenAboutPageCommand}" HorizontalOptions="CenterAndExpand" />
-            <Button Text="List" Command="{Binding OpenListPageCommand}" HorizontalOptions="CenterAndExpand" />
-            <Button Text="Profile" Command="{Binding OpenProfilePageCommand}" HorizontalOptions="CenterAndExpand" />
+            <Button Command="{Binding OpenAboutPageCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="home.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding OpenListPageCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="list.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding OpenProfilePageCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="user2.png" />
+                </Button.ImageSource>
+            </Button>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Primary}" Padding="10" HorizontalOptions="FillAndExpand">
+            <Button Command="{Binding OpenAboutPageCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="home.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding OpenListPageCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="list.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding OpenProfilePageCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="user2.png" />
+                </Button.ImageSource>
+            </Button>
         </StackLayout>
     </Grid>
 

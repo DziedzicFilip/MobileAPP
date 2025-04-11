@@ -51,9 +51,21 @@
 
         <!-- Dolny panel -->
         <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Primary}" Padding="10" HorizontalOptions="FillAndExpand">
-            <Button Text="Home" Command="{Binding OpenAboutPage}" HorizontalOptions="CenterAndExpand" />
-            <Button Text="Settings" Command="{Binding SettingsCommand}" HorizontalOptions="CenterAndExpand" />
-            <Button Text="Profile" HorizontalOptions="CenterAndExpand" />
+            <Button Command="{Binding HomeCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="home.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding ListCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="list.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding ProfileCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="user2.png" />
+                </Button.ImageSource>
+            </Button>
         </StackLayout>
     </Grid>
 </ContentPage>
