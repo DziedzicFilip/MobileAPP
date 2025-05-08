@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SeenIT\\SeenIT.Android\\SeenIT.Android.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RestApiSeenit\\RestApiSeenit.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

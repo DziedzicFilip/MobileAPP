@@ -1,4 +1,5 @@
 ﻿using SeenIT.Models;
+using SeenIT.ViewModels.Abstract;
 using SeenIT.Views;
 using System;
 using System.Collections.ObjectModel;
@@ -34,12 +35,12 @@ namespace SeenIT.ViewModels
 
             try
             {
-                Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items)
-                {
-                    Items.Add(item);
-                }
+                //Items.Clear();
+               // var items = await DataStore.GetItemsAsync(true);
+                //foreach (var item in items)
+                //{
+                 //   Items.Add(item);
+                //}
             }
             catch (Exception ex)
             {

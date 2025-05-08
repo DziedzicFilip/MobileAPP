@@ -1,0 +1,1201 @@
+[
+  {
+    "ContainingType": "RestApiSeenit.Controllers.FilmController",
+    "Method": "GetFilms",
+    "RelativePath": "api/Film",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.FilmForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.FilmController",
+    "Method": "PostFilm",
+    "RelativePath": "api/Film",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "film",
+        "Type": "RestApiSeenit.ForView.FilmForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.FilmForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.FilmController",
+    "Method": "GetFilm",
+    "RelativePath": "api/Film/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.FilmForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.FilmController",
+    "Method": "PutFilm",
+    "RelativePath": "api/Film/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "film",
+        "Type": "RestApiSeenit.ForView.FilmForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.FilmController",
+    "Method": "DeleteFilm",
+    "RelativePath": "api/Film/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObejrzaneController",
+    "Method": "GetListaObejrzanes",
+    "RelativePath": "api/ListaObejrzane",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.ListaObejrzaneForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObejrzaneController",
+    "Method": "PostListaObejrzane",
+    "RelativePath": "api/ListaObejrzane",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "listaObejrzane",
+        "Type": "RestApiSeenit.ForView.ListaObejrzaneForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.ListaObejrzaneForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObejrzaneController",
+    "Method": "GetListaObejrzane",
+    "RelativePath": "api/ListaObejrzane/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.ListaObejrzaneForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObejrzaneController",
+    "Method": "PutListaObejrzane",
+    "RelativePath": "api/ListaObejrzane/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "listaObejrzane",
+        "Type": "RestApiSeenit.ForView.ListaObejrzaneForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObejrzaneController",
+    "Method": "DeleteListaObejrzane",
+    "RelativePath": "api/ListaObejrzane/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObserwowaneController",
+    "Method": "GetListaObserwowanes",
+    "RelativePath": "api/ListaObserwowane",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.ListaObserwowaneForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObserwowaneController",
+    "Method": "PostListaObserwowane",
+    "RelativePath": "api/ListaObserwowane",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "listaObserwowane",
+        "Type": "RestApiSeenit.ForView.ListaObserwowaneForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.ListaObserwowaneForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObserwowaneController",
+    "Method": "GetListaObserwowane",
+    "RelativePath": "api/ListaObserwowane/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.ListaObserwowaneForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObserwowaneController",
+    "Method": "PutListaObserwowane",
+    "RelativePath": "api/ListaObserwowane/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "listaObserwowane",
+        "Type": "RestApiSeenit.ForView.ListaObserwowaneForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.ListaObserwowaneController",
+    "Method": "DeleteListaObserwowane",
+    "RelativePath": "api/ListaObserwowane/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.OdcinekController",
+    "Method": "GetOdcineks",
+    "RelativePath": "api/Odcinek",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.OdcinekForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.OdcinekController",
+    "Method": "PostOdcinek",
+    "RelativePath": "api/Odcinek",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "odcinek",
+        "Type": "RestApiSeenit.ForView.OdcinekForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.OdcinekForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.OdcinekController",
+    "Method": "GetOdcinek",
+    "RelativePath": "api/Odcinek/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.OdcinekForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.OdcinekController",
+    "Method": "PutOdcinek",
+    "RelativePath": "api/Odcinek/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "odcinek",
+        "Type": "RestApiSeenit.ForView.OdcinekForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.OdcinekController",
+    "Method": "DeleteOdcinek",
+    "RelativePath": "api/Odcinek/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaFilmuController",
+    "Method": "GetRecenzjaFilmus",
+    "RelativePath": "api/RecenzjaFilmu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.RecenzjaFilmuForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaFilmuController",
+    "Method": "PostRecenzjaFilmu",
+    "RelativePath": "api/RecenzjaFilmu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recenzjaFilmu",
+        "Type": "RestApiSeenit.ForView.RecenzjaFilmuForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.RecenzjaFilmuForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaFilmuController",
+    "Method": "GetRecenzjaFilmu",
+    "RelativePath": "api/RecenzjaFilmu/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.RecenzjaFilmuForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaFilmuController",
+    "Method": "PutRecenzjaFilmu",
+    "RelativePath": "api/RecenzjaFilmu/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "recenzjaFilmu",
+        "Type": "RestApiSeenit.ForView.RecenzjaFilmuForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaFilmuController",
+    "Method": "DeleteRecenzjaFilmu",
+    "RelativePath": "api/RecenzjaFilmu/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaOdcinkaController",
+    "Method": "GetRecenzjaOdcinkas",
+    "RelativePath": "api/RecenzjaOdcinka",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.RecenzjaOdcinkaForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaOdcinkaController",
+    "Method": "PostRecenzjaOdcinka",
+    "RelativePath": "api/RecenzjaOdcinka",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recenzjaOdcinka",
+        "Type": "RestApiSeenit.ForView.RecenzjaOdcinkaForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.RecenzjaOdcinkaForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaOdcinkaController",
+    "Method": "GetRecenzjaOdcinka",
+    "RelativePath": "api/RecenzjaOdcinka/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.RecenzjaOdcinkaForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaOdcinkaController",
+    "Method": "PutRecenzjaOdcinka",
+    "RelativePath": "api/RecenzjaOdcinka/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "recenzjaOdcinka",
+        "Type": "RestApiSeenit.ForView.RecenzjaOdcinkaForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaOdcinkaController",
+    "Method": "DeleteRecenzjaOdcinka",
+    "RelativePath": "api/RecenzjaOdcinka/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaSerialuController",
+    "Method": "GetRecenzjaSerialus",
+    "RelativePath": "api/RecenzjaSerialu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.RecenzjaSerialuForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaSerialuController",
+    "Method": "PostRecenzjaSerialu",
+    "RelativePath": "api/RecenzjaSerialu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recenzjaSerialu",
+        "Type": "RestApiSeenit.ForView.RecenzjaSerialuForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.RecenzjaSerialuForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaSerialuController",
+    "Method": "GetRecenzjaSerialu",
+    "RelativePath": "api/RecenzjaSerialu/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.RecenzjaSerialuForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaSerialuController",
+    "Method": "PutRecenzjaSerialu",
+    "RelativePath": "api/RecenzjaSerialu/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "recenzjaSerialu",
+        "Type": "RestApiSeenit.ForView.RecenzjaSerialuForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RecenzjaSerialuController",
+    "Method": "DeleteRecenzjaSerialu",
+    "RelativePath": "api/RecenzjaSerialu/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RodzajController",
+    "Method": "GetRodzajs",
+    "RelativePath": "api/Rodzaj",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.RodzajForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RodzajController",
+    "Method": "PostRodzaj",
+    "RelativePath": "api/Rodzaj",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rodzaj",
+        "Type": "RestApiSeenit.ForView.RodzajForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.RodzajForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RodzajController",
+    "Method": "GetRodzaj",
+    "RelativePath": "api/Rodzaj/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.RodzajForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RodzajController",
+    "Method": "PutRodzaj",
+    "RelativePath": "api/Rodzaj/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "rodzaj",
+        "Type": "RestApiSeenit.ForView.RodzajForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.RodzajController",
+    "Method": "DeleteRodzaj",
+    "RelativePath": "api/Rodzaj/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.SerialController",
+    "Method": "GetSerials",
+    "RelativePath": "api/Serial",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.SerialForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.SerialController",
+    "Method": "PostSerial",
+    "RelativePath": "api/Serial",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serial",
+        "Type": "RestApiSeenit.ForView.SerialForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.SerialForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.SerialController",
+    "Method": "GetSerial",
+    "RelativePath": "api/Serial/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.SerialForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.SerialController",
+    "Method": "PutSerial",
+    "RelativePath": "api/Serial/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "serial",
+        "Type": "RestApiSeenit.ForView.SerialForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.SerialController",
+    "Method": "DeleteSerial",
+    "RelativePath": "api/Serial/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UlubioneController",
+    "Method": "GetUlubiones",
+    "RelativePath": "api/Ulubione",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.UlubioneForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UlubioneController",
+    "Method": "PostUlubione",
+    "RelativePath": "api/Ulubione",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ulubione",
+        "Type": "RestApiSeenit.ForView.UlubioneForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.UlubioneForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UlubioneController",
+    "Method": "GetUlubione",
+    "RelativePath": "api/Ulubione/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.UlubioneForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UlubioneController",
+    "Method": "PutUlubione",
+    "RelativePath": "api/Ulubione/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ulubione",
+        "Type": "RestApiSeenit.ForView.UlubioneForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UlubioneController",
+    "Method": "DeleteUlubione",
+    "RelativePath": "api/Ulubione/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UzytkownikController",
+    "Method": "GetUzytkowniks",
+    "RelativePath": "api/Uzytkownik",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestApiSeenit.ForView.UzytkownikForView, RestApiSeenit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UzytkownikController",
+    "Method": "PostUzytkownik",
+    "RelativePath": "api/Uzytkownik",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uzytkownik",
+        "Type": "RestApiSeenit.ForView.UzytkownikForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.UzytkownikForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UzytkownikController",
+    "Method": "GetUzytkownik",
+    "RelativePath": "api/Uzytkownik/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RestApiSeenit.ForView.UzytkownikForView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UzytkownikController",
+    "Method": "PutUzytkownik",
+    "RelativePath": "api/Uzytkownik/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "uzytkownik",
+        "Type": "RestApiSeenit.ForView.UzytkownikForView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApiSeenit.Controllers.UzytkownikController",
+    "Method": "DeleteUzytkownik",
+    "RelativePath": "api/Uzytkownik/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

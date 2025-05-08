@@ -3,6 +3,7 @@ using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using SeenIT.Views;
+using SeenIT.ViewModels.Abstract;
 namespace SeenIT.ViewModels
 {
     public class AboutViewModel : BaseViewModel
