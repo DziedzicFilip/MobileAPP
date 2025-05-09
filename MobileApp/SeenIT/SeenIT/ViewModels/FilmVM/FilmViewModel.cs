@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using SeenIT.ServiceReference;
 using System.Windows.Input;
+using SeenIT.Views.FilmViews;
 
 namespace SeenIT.ViewModels.FilmVM
 {
@@ -30,7 +31,7 @@ namespace SeenIT.ViewModels.FilmVM
         }
         public override async Task GoToAddPage()
         {
-           // await Shell.Current.GoToAsync(nameof(NewClientPage));
+            await Shell.Current.GoToAsync(nameof(NewFilmPage));
         }
         public override async Task GoToDetailsPage(FilmForView item)
         {

@@ -1354,5 +1354,5 @@ C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debu
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\android\assets\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\android\assets\System.Text.Encodings.Web.dll
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\android\assets\System.Threading.Tasks.Extensions.dll
-C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\_1.jpg
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\_4.png
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\_1002.jpg

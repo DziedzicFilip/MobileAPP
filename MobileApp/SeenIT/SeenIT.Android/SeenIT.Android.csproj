@@ -110,7 +110,7 @@
     <AndroidResource Include="Resources\drawable\Devil_May_Cry.jpg" />
     <AndroidResource Include="Resources\drawable\dojrzewanie.jpg" />
     <AndroidResource Include="Resources\drawable\LegendaOchi.3.jpg" />
-    <AndroidResource Include="Resources\drawable\_1.jpg" />
+    <AndroidResource Include="Resources\drawable\_1002.jpg" />
     <AndroidResource Include="Resources\drawable\screamboat.jpg" />
     <AndroidResource Include="Resources\drawable\SW3.jpg" />
   </ItemGroup>

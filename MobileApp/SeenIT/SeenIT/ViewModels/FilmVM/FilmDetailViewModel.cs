@@ -2,6 +2,7 @@
 using SeenIT.ServiceReference;
 using SeenIT.Services;
 using SeenIT.ViewModels.Abstract;
+using SeenIT.Views.FilmViews;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -18,6 +19,8 @@ namespace SeenIT.ViewModels.FilmVM
         private int id;
         private string tytul;
         private string opis;
+        private int? rodzajId;
+        private string rodzajData;
         private DateTimeOffset? dataPremiery;
         #endregion
         #region Properties
@@ -36,7 +39,16 @@ namespace SeenIT.ViewModels.FilmVM
             get => opis;
             set => SetProperty(ref opis, value);
         }
-        
+        public int? RodzajId
+        {
+            get => rodzajId;
+            set => SetProperty(ref rodzajId, value);
+        }
+        public string RodzajData
+        {
+            get => rodzajData;
+            set => SetProperty(ref rodzajData, value);
+        }
         public DateTimeOffset? DataPremiery
         {
             get => dataPremiery;
@@ -49,11 +61,17 @@ namespace SeenIT.ViewModels.FilmVM
         {
         }
         protected override async Task GoToUpdatePage()
-        { 
-            //=> await Shell.Current.GoToAsync($"{nameof(EditClientPage)}?{nameof(EditClientViewModel.ItemId)}={IdClient}");
-            //
+        {
+            try
+            {
+                await Shell.Current.GoToAsync($"{nameof(EditFilmPage)}?{nameof(EditFilmViewModel.ItemId)}={Id}");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"[Navigation Error] {ex}");
+            }
         }
-            
+
 
         public override async Task LoadItem(int id)
         {

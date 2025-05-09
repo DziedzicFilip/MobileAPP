@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SeenIT.Views.FilmPage"
+             x:Class="SeenIT.Views.FilmViews.FilmPage"
              xmlns:vm="clr-namespace:SeenIT.ViewModels.FilmVM"
              xmlns:model="clr-namespace:SeenIT.ServiceReference"
              xmlns:local="clr-namespace:SeenIT.ViewModels.FilmVM"
@@ -46,8 +46,12 @@
                                            Aspect="AspectFill" />
                                     <Label Text="{Binding Tytul}" 
                                            FontSize="Medium"
-                                           HorizontalOptions="Center" />
+                                           HorizontalOptions="Center" 
+                                           FontAttributes="Bold" />
                                     <Label Text="{Binding DataPremiery, StringFormat='Premiera: {0:yyyy-MM-dd}'}"
+                                           FontSize="Small"
+                                           HorizontalOptions="Center" />
+                                    <Label Text="{Binding RodzajData, StringFormat='Gatunek: {0}'}"
                                            FontSize="Small"
                                            HorizontalOptions="Center" />
                                     <StackLayout.GestureRecognizers>

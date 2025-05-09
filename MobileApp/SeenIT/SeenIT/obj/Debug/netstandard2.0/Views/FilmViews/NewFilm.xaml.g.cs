@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SeenIT.Views.FilmPage.xaml", "Views/FilmPage.xaml", typeof(global::SeenIT.Views.FilmPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SeenIT.Views.FilmViews.NewFilm.xaml", "Views/FilmViews/NewFilm.xaml", typeof(global::SeenIT.Views.FilmViews.NewFilm))]
 
-namespace SeenIT.Views {
+namespace SeenIT.Views.FilmViews {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\FilmPage.xaml")]
-    public partial class FilmPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\FilmViews\\NewFilm.xaml")]
+    public partial class NewFilm : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ContentPage FilmGridPage;
+        private global::Xamarin.Forms.ContentPage BrowseItemsPage;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FilmPage));
-            FilmGridPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "FilmGridPage");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(NewFilm));
+            BrowseItemsPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "BrowseItemsPage");
         }
     }
 }

@@ -2067,6 +2067,10 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "rodzajData": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

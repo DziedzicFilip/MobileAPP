@@ -16709,7 +16709,7 @@ namespace SeenIT.Droid
 			public const int xamarin_logo = 2131165344;
 			
 			// aapt resource value: 0x7F070006
-			public const int _1 = 2131165190;
+			public const int _1002 = 2131165190;
 			
 			// aapt resource value: 0x7F070007
 			public const int _4 = 2131165191;

@@ -1,4 +1,5 @@
 ﻿using SeenIT.ViewModels.FilmVM;
+using SeenIT.ViewModels.RodzajVM;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,15 +9,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SeenIT.Views
+namespace SeenIT.Views.RodzajViews
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FilmDetailPage : ContentPage
+    public partial class NewRodzajPage : ContentPage
     {
-        public FilmDetailPage()
+        public NewRodzajPage()
         {
             InitializeComponent();
-            BindingContext = new FilmDetailViewModel();
+            BindingContext = new NewRodzajViewModel();
         }
     }
 }

@@ -2,6 +2,8 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:SeenIT.Views"
+       xmlns:localFilm="clr-namespace:SeenIT.Views.FilmViews"
+       xmlns:localRodzaj="clr-namespace:SeenIT.Views.RodzajViews"
        Title="SeenIT"
        x:Class="SeenIT.AppShell">
 
@@ -94,9 +96,11 @@
         <ShellContent Route="ListPage" ContentTemplate="{DataTemplate local:ListPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Filmy">
-        <ShellContent Route="FilmPage" ContentTemplate="{DataTemplate local:FilmPage}" />
+        <ShellContent Route="FilmPage" ContentTemplate="{DataTemplate localFilm:FilmPage}" />
     </FlyoutItem>
-
+    <FlyoutItem Title="Rodzaje">
+        <ShellContent Route="RodzajPage" ContentTemplate="{DataTemplate localRodzaj:RodzajPage}" />
+    </FlyoutItem>
 
 
 

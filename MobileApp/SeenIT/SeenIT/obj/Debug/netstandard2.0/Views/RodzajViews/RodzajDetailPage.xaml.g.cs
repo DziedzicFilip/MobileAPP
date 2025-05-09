@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SeenIT.Views.FilmDetailPage.xaml", "Views/FilmDetailPage.xaml", typeof(global::SeenIT.Views.FilmDetailPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SeenIT.Views.RodzajViews.RodzajDetailPage.xaml", "Views/RodzajViews/RodzajDetailPage.xaml", typeof(global::SeenIT.Views.RodzajViews.RodzajDetailPage))]
 
-namespace SeenIT.Views {
+namespace SeenIT.Views.RodzajViews {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\FilmDetailPage.xaml")]
-    public partial class FilmDetailPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\RodzajViews\\RodzajDetailPage.xaml")]
+    public partial class RodzajDetailPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FilmDetailPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(RodzajDetailPage));
         }
     }
 }

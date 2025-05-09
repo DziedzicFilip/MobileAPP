@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestApiSeenit.ForView;
+using RestApiSeenit.Helpers;
 using RestApiSeenit.Models;
 using RestApiSeenit.Models.Contexts;
 
@@ -30,7 +31,9 @@ namespace RestApiSeenit.Controllers
           {
               return NotFound();
           }
-            return (await _context.Films.ToListAsync())
+            return (await _context.Films
+                .Include(cli => cli.Rodzaj)
+                .ToListAsync())
                 .Select(cli => (FilmForView)cli)
                 .ToList();
         }
@@ -43,7 +46,9 @@ namespace RestApiSeenit.Controllers
           {
               return NotFound();
           }
-            var film = await _context.Films.FindAsync(id);
+            var film = await _context.Films
+                .Include(film => film.Rodzaj)
+                .FirstOrDefaultAsync(film => film.Id == id);
 
             if (film == null)
             {
@@ -62,7 +67,7 @@ namespace RestApiSeenit.Controllers
             {
                 return BadRequest();
             }
-            Film filmToChange = film;
+            FilmForView filmToChange = film;
             _context.Entry(filmToChange).State = EntityState.Modified;
 
             try
@@ -93,11 +98,24 @@ namespace RestApiSeenit.Controllers
           {
               return Problem("Entity set 'FilmyContext.Films'  is null.");
           }
-            Film filmToChange = film;
-            _context.Films.Add(filmToChange);
-            await _context.SaveChangesAsync();
+            _context.Films.Add(film);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (FilmExists(film.Id))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-            return CreatedAtAction("GetFilm", new { id = film.Id }, film);
+            return Ok(film);
         }
 
         // DELETE: api/Film/5

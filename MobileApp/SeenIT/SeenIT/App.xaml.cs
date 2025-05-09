@@ -29,6 +29,7 @@ namespace SeenIT
             DependencyService.RegisterSingleton(new SeenitService("https://10.0.2.2:7206", client));
             DependencyService.Register<MockDataStore>();
             DependencyService.Register<FilmDataStore>();
+            DependencyService.Register<RodzajDataStore>();
             MainPage = new AppShell();
         }
 

@@ -13,10 +13,12 @@ namespace RestApiSeenit.ForView
         public string? Opis { get; set; }
         public DateTime? DataPremiery { get; set; }
         public int? RodzajId { get; set; }
-
+        public string? RodzajData { get; set; } = default!;
         public static implicit operator Film(FilmForView cli)
             => new Film().CopyProperties(cli);
         public static implicit operator FilmForView(Film cli)
-            => new FilmForView().CopyProperties(cli);
+            => new FilmForView() {
+                RodzajData = cli.Rodzaj?.Nazwa??string.Empty
+            }.CopyProperties(cli);
     }
 }
