@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestApiSeenit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca04c455e615ed9def581634a5043cf5b943fc18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+566410324f52837399bf0628aebbaea5bf7c7f2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestApiSeenit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestApiSeenit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
