@@ -17,16 +17,17 @@ namespace SeenIT.ViewModels.FilmVM
 {
     public class FilmViewModel : AItemListViewModel<FilmForView>
     {
-        public Command OpenListPageCommand { get; }
-        public Command OpenProfilePageCommand { get; }
+        public Command ProfileCommand { get; }
+        public Command ListCommand { get; }
+        public Command HomeCommand { get; }
         public ICommand OpenWebCommand { get; }
-        public ICommand OpenAboutPage { get; }
         public Command OpenObjectCommand { get; }
         public FilmViewModel()
             : base("Filmy")
         {
-            OpenListPageCommand = new Command(OnOpenListPage);
-            OpenProfilePageCommand = new Command(OnOpenProfilePage);
+            ProfileCommand = new Command(OnProfileClicked);
+            ListCommand = new Command(OnListClicked);
+            HomeCommand = new Command(OnHomeClicked);
             OpenObjectCommand = new Command(OpenObjectPage);
         }
         public override async Task GoToAddPage()
@@ -37,14 +38,17 @@ namespace SeenIT.ViewModels.FilmVM
         {
             await Shell.Current.GoToAsync($"{nameof(FilmDetailPage)}?{nameof(FilmDetailViewModel.ItemId)}={item.Id}");
         }
-        private async void OnOpenListPage()
-        {
-            await Shell.Current.GoToAsync($"//{nameof(ListPage)}");
-        }
-
-        private async void OnOpenProfilePage()
+        public async void OnProfileClicked(object obj)
         {
             await Shell.Current.GoToAsync($"//{nameof(ProfilePage)}");
+        }
+        public async void OnListClicked(object obj)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(FilmPage)}");
+        }
+        public async void OnHomeClicked(object obj)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
         }
         private async void OpenObjectPage()
         {

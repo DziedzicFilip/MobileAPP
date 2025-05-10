@@ -15,6 +15,7 @@ namespace RestApiSeenit.ForView
         public string? Opis { get; set; }
         [Column(TypeName = "date")]
         public DateTime? DataStartu { get; set; }
+        public string? UrlFoto { get; set; }
         public string? RodzajData { get; set; } = default!;
         public int? RodzajId { get; set; }
         public static implicit operator Serial(SerialForView item)

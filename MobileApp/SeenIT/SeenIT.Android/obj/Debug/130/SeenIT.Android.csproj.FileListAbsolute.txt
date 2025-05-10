@@ -1355,4 +1355,12 @@ C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debu
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\android\assets\System.Text.Encodings.Web.dll
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\android\assets\System.Threading.Tasks.Extensions.dll
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\_4.png
-C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\_1002.jpg
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\mc.jpg
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\def.png
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\film_icon.png
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\profile_icon.png
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\rodzaje_icon.png
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\serial_icon.png
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\settings_icon.png
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\uzytkownicy_icon.png
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.Android\obj\Debug\130\res\drawable\logo.png

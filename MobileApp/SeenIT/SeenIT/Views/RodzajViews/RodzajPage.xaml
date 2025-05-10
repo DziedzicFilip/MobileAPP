@@ -10,31 +10,54 @@
     <ContentPage.ToolbarItems>
             <ToolbarItem Text="Dodaj" Command="{Binding AddItemCommand}" />
         </ContentPage.ToolbarItems>
-
-    <RefreshView x:DataType="local:RodzajViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-        <CollectionView x:Name="ItemsListView"
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <RefreshView x:DataType="local:RodzajViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <CollectionView x:Name="ItemsListView"
             ItemsSource="{Binding Items}"
             SelectionMode="None">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout Padding="10" x:DataType="model:RodzajForView">
-                        <Label Text="{Binding Id, StringFormat='ID: {0}'}" 
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" x:DataType="model:RodzajForView">
+                            <Label Text="{Binding Id, StringFormat='ID: {0}'}" 
                         Style="{DynamicResource ListItemTextStyle}" 
                         FontSize="16" FontAttributes="Bold" />
-                        <Label Text="{Binding Nazwa, StringFormat='Nazwa: {0}'}" 
+                            <Label Text="{Binding Nazwa, StringFormat='Nazwa: {0}'}" 
                         Style="{DynamicResource ListItemTextStyle}" 
                         FontSize="16" />
-                  
-                        <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer 
+
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer 
                             NumberOfTapsRequired="1"
                             Command="{Binding Source={RelativeSource AncestorType={x:Type local:RodzajViewModel}}, Path=ItemTapped}"		
                             CommandParameter="{Binding .}">
-                            </TapGestureRecognizer>
-                        </StackLayout.GestureRecognizers>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </RefreshView>
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Primary}" Padding="10" HorizontalOptions="FillAndExpand">
+            <Button Command="{Binding HomeCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="home.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding ListCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="list.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding ProfileCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="user2.png" />
+                </Button.ImageSource>
+            </Button>
+        </StackLayout>
+    </Grid>
 </ContentPage>

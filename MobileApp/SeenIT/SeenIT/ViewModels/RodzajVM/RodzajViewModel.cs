@@ -14,11 +14,17 @@ namespace SeenIT.ViewModels.RodzajVM
 {
     public class RodzajViewModel : AItemListViewModel<RodzajForView>
     {
+        public Command ProfileCommand { get; }
+        public Command ListCommand { get; }
+        public Command HomeCommand { get; }
         public Command OpenObjectCommand { get; }
         public RodzajViewModel()
             : base("Rodzaje")
         {
             OpenObjectCommand = new Command(OpenObjectPage);
+            ProfileCommand = new Command(OnProfileClicked);
+            ListCommand = new Command(OnListClicked);
+            HomeCommand = new Command(OnHomeClicked);
         }
         public override async Task GoToAddPage()
         {
@@ -27,6 +33,18 @@ namespace SeenIT.ViewModels.RodzajVM
         public override async Task GoToDetailsPage(RodzajForView item)
         {
             await Shell.Current.GoToAsync($"{nameof(RodzajDetailPage)}?{nameof(RodzajDetailsViewModel.ItemId)}={item.Id}");
+        }
+        public async void OnProfileClicked(object obj)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(ProfilePage)}");
+        }
+        public async void OnListClicked(object obj)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(FilmPage)}");
+        }
+        public async void OnHomeClicked(object obj)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
         }
         private async void OpenObjectPage()
         {

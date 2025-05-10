@@ -27,6 +27,7 @@ namespace RestApiSeenit.Models
         [Column(TypeName = "date")]
         public DateTime? DataStartu { get; set; }
         public int? RodzajId { get; set; }
+        public string? UrlFoto { get; set; }
 
         [ForeignKey("RodzajId")]
         [InverseProperty("Serials")]

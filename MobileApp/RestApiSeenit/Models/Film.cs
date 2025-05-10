@@ -19,7 +19,8 @@ namespace RestApiSeenit.Models
         [Column(TypeName = "date")]
         public DateTime? DataPremiery { get; set; }
         public int? RodzajId { get; set; }
-
+        public string? UrlFoto { get; set; }
+        [Column(TypeName = "text")]
         [ForeignKey("RodzajId")]
         [InverseProperty("Films")]
         public virtual Rodzaj? Rodzaj { get; set; }

@@ -16,13 +16,14 @@
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
+        <ToolbarItem Text="Dodaj" Command="{Binding AddItemCommand}" />
     </ContentPage.ToolbarItems>
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
         </Grid.RowDefinitions>
 
         <RefreshView x:DataType="local:FilmViewModel"
@@ -33,7 +34,7 @@
                 <StackLayout Padding="20" Spacing="20">
                     <Entry Placeholder="Szukaj filmu..." />
 
-                    <Label Text="Popularne" FontSize="Title" />
+                    <Label Text="Filmy" FontSize="Title" />
 
                     <CollectionView ItemsSource="{Binding Items}"
                                     ItemsLayout="VerticalGrid, 2"
@@ -41,7 +42,7 @@
                         <CollectionView.ItemTemplate>
                             <DataTemplate x:DataType="model:FilmForView">
                                 <StackLayout Padding="10" Spacing="10">
-                                    <Image Source="{Binding Id, StringFormat='_{0}.png'}"
+                                    <Image Source="{Binding UrlFoto}"
                                            HeightRequest="200"
                                            Aspect="AspectFill" />
                                     <Label Text="{Binding Tytul}" 
@@ -69,7 +70,22 @@
             </ScrollView>
         </RefreshView>
 
-        <!-- Dolny pasek (opcjonalnie odkomentuj) -->
-        <!--<StackLayout Grid.Row="1" ... >...</StackLayout>-->
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Primary}" Padding="10" HorizontalOptions="FillAndExpand">
+            <Button Command="{Binding HomeCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="home.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding ListCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="list.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding ProfileCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="user2.png" />
+                </Button.ImageSource>
+            </Button>
+        </StackLayout>
     </Grid>
 </ContentPage>

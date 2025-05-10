@@ -15,6 +15,8 @@
             <Editor Text="{Binding Opis, Mode=TwoWay}" FontSize="Medium"/>
             <Label Text="Data Premiery" FontSize="Medium" />
             <DatePicker Date="{Binding DataPremiery, Mode=TwoWay}" FontSize="Medium" />
+            <Label Text="UrlFoto" FontSize="Medium" />
+            <Editor Text="{Binding UrlFoto, Mode=TwoWay}" FontSize="Medium"/>
 
             <StackLayout Orientation="Horizontal">
                 <Button Text="Anuluj" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>

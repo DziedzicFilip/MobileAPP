@@ -16,6 +16,7 @@ namespace SeenIT.ViewModels.SerialVM
         private int id;
         private string tytul;
         private string opis;
+        private string urlFoto;
         private DateTimeOffset? dataPremiery;
         private RodzajForView selectedRodzaj;
         private List<RodzajForView> rodzaje;
@@ -36,7 +37,11 @@ namespace SeenIT.ViewModels.SerialVM
             get => opis;
             set => SetProperty(ref opis, value);
         }
-
+        public string UrlFoto
+        {
+            get => urlFoto;
+            set => SetProperty(ref urlFoto, value);
+        }
         public DateTimeOffset? DataPremiery
         {
             get => dataPremiery;

@@ -12,21 +12,23 @@ using Xamarin.Forms;
 using SeenIT.ServiceReference;
 using System.Windows.Input;
 using SeenIT.Views.SerialViews;
+using SeenIT.Views.FilmViews;
 
 namespace SeenIT.ViewModels.SerialVM
 {
     public class SerialViewModel : AItemListViewModel<SerialForView>
     {
-        public Command OpenListPageCommand { get; }
-        public Command OpenProfilePageCommand { get; }
+        public Command ProfileCommand { get; }
+        public Command ListCommand { get; }
+        public Command HomeCommand { get; }
         public ICommand OpenWebCommand { get; }
-        public ICommand OpenAboutPage { get; }
         public Command OpenObjectCommand { get; }
         public SerialViewModel()
             : base("Seriale")
         {
-            OpenListPageCommand = new Command(OnOpenListPage);
-            OpenProfilePageCommand = new Command(OnOpenProfilePage);
+            ProfileCommand = new Command(OnProfileClicked);
+            ListCommand = new Command(OnListClicked);
+            HomeCommand = new Command(OnHomeClicked);
             OpenObjectCommand = new Command(OpenObjectPage);
         }
         public override async Task GoToAddPage()
@@ -37,15 +39,20 @@ namespace SeenIT.ViewModels.SerialVM
         {
             await Shell.Current.GoToAsync($"{nameof(SerialDetailPage)}?{nameof(SerialDetailViewModel.ItemId)}={item.Id}");
         }
-        private async void OnOpenListPage()
-        {
-            await Shell.Current.GoToAsync($"//{nameof(ListPage)}");
-        }
-
-        private async void OnOpenProfilePage()
+        public async void OnProfileClicked(object obj)
         {
             await Shell.Current.GoToAsync($"//{nameof(ProfilePage)}");
         }
+        public async void OnListClicked(object obj)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(FilmPage)}");
+        }
+        public async void OnHomeClicked(object obj)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+        }
+
+
         private async void OpenObjectPage()
         {
             await Shell.Current.GoToAsync($"//{nameof(ObjectPage)}");

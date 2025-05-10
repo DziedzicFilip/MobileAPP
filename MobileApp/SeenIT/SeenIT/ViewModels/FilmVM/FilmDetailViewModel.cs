@@ -20,6 +20,7 @@ namespace SeenIT.ViewModels.FilmVM
         private string tytul;
         private string opis;
         private int? rodzajId;
+        private string urlFoto;
         private string rodzajData;
         private DateTimeOffset? dataPremiery;
         #endregion
@@ -43,6 +44,11 @@ namespace SeenIT.ViewModels.FilmVM
         {
             get => rodzajId;
             set => SetProperty(ref rodzajId, value);
+        }
+        public string UrlFoto
+        {
+            get => urlFoto;
+            set => SetProperty(ref urlFoto, value);
         }
         public string RodzajData
         {

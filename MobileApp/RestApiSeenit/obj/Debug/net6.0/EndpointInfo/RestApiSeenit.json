@@ -2068,6 +2068,10 @@
             "format": "int32",
             "nullable": true
           },
+          "urlFoto": {
+            "type": "string",
+            "nullable": true
+          },
           "rodzajData": {
             "type": "string",
             "nullable": true
@@ -2309,6 +2313,10 @@
           "dataStartu": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          },
+          "urlFoto": {
+            "type": "string",
             "nullable": true
           },
           "rodzajData": {

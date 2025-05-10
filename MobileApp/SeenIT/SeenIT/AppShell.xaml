@@ -88,25 +88,22 @@
     <FlyoutItem Title="Browse" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Settings" >
+    <FlyoutItem Title="Settings" Icon="settings_icon.png" >
         <ShellContent Route="SettingPage" ContentTemplate="{DataTemplate local:SettingPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Profile" >
+    <FlyoutItem Title="Profile" Icon="profile_icon.png" >
         <ShellContent  ContentTemplate="{DataTemplate local:ProfilePage}" Route="ProfilePage" />
     </FlyoutItem>
-    <FlyoutItem Title="My List">
-        <ShellContent Route="ListPage" ContentTemplate="{DataTemplate local:ListPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Filmy">
+    <FlyoutItem Title="Filmy" Icon="film_icon.png">
         <ShellContent Route="FilmPage" ContentTemplate="{DataTemplate localFilm:FilmPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Seriale">
+    <FlyoutItem Title="Seriale" Icon="serial_icon.png">
         <ShellContent Route="SerialPage" ContentTemplate="{DataTemplate localSerial:SerialPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Rodzaje">
+    <FlyoutItem Title="Rodzaje" Icon="rodzaje_icon.png">
         <ShellContent Route="RodzajPage" ContentTemplate="{DataTemplate localRodzaj:RodzajPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Uzytkownicy">
+    <FlyoutItem Title="Uzytkownicy" Icon="uzytkownicy_icon.png">
         <ShellContent Route="UzytkownikPage" ContentTemplate="{DataTemplate localUzytkownik:UzytkownikPage}" />
     </FlyoutItem>
 

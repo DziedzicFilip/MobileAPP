@@ -17,6 +17,7 @@ namespace SeenIT.ViewModels.FilmVM
         private int id;
         private string tytul;
         private string opis;
+        private string urlFoto;
         private RodzajForView selectedRodzaj;
         private List<RodzajForView> rodzaje;
 
@@ -38,6 +39,11 @@ namespace SeenIT.ViewModels.FilmVM
         {
             get => opis;
             set => SetProperty(ref opis, value);
+        }
+        public string UrlFoto
+        {
+            get => urlFoto;
+            set => SetProperty(ref urlFoto, value);
         }
 
         public DateTimeOffset? DataPremiery

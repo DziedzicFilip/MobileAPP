@@ -4573,6 +4573,9 @@ namespace SeenIT.ServiceReference
         [Newtonsoft.Json.JsonProperty("rodzajId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? RodzajId { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("urlFoto", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UrlFoto { get; set; }
+
         [Newtonsoft.Json.JsonProperty("rodzajData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RodzajData { get; set; }
 
@@ -4738,6 +4741,9 @@ namespace SeenIT.ServiceReference
 
         [Newtonsoft.Json.JsonProperty("dataStartu", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.DateTimeOffset? DataStartu { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("urlFoto", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UrlFoto { get; set; }
 
         [Newtonsoft.Json.JsonProperty("rodzajData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RodzajData { get; set; }
