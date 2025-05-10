@@ -73,7 +73,7 @@
   },
   {
     "ContainingType": "RestApiSeenit.Controllers.FilmController",
-    "Method": "PutFilm",
+    "Method": "PutOrder",
     "RelativePath": "api/Film/{id}",
     "HttpMethod": "PUT",
     "IsController": true,

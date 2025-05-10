@@ -56,3 +56,11 @@ C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netsta
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\RodzajViews\NewRodzajPage.xaml.g.cs
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\RodzajViews\RodzajDetailPage.xaml.g.cs
 C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\RodzajViews\RodzajPage.xaml.g.cs
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\UzytkownikViews\EditUzytkownikPage.xaml.g.cs
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\UzytkownikViews\NewUzytkownikPage.xaml.g.cs
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\UzytkownikViews\UzytkownikDetailPage.xaml.g.cs
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\UzytkownikViews\UzytkownikPage.xaml.g.cs
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\SerialViews\EditSerialPage.xaml.g.cs
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\SerialViews\NewFilmPage.xaml.g.cs
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\SerialViews\SerialDetailsPage.xaml.g.cs
+C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\SerialViews\SerialPage.xaml.g.cs

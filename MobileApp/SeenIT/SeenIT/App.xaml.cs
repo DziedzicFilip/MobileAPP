@@ -30,6 +30,8 @@ namespace SeenIT
             DependencyService.Register<MockDataStore>();
             DependencyService.Register<FilmDataStore>();
             DependencyService.Register<RodzajDataStore>();
+            DependencyService.Register<UzytkownikDataStore>();
+            DependencyService.Register<SerialDataStore>();
             MainPage = new AppShell();
         }
 

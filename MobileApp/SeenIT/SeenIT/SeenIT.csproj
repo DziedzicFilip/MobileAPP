@@ -68,12 +68,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\SerialVM\" />
+    <Folder Include="Views\UlubioneViews\" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Views\FilmViews\NewFilmPage.xaml.cs">
       <DependentUpon>NewFilmPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SerialViews\EditSerialPage.xaml.cs">
+      <DependentUpon>EditSerialPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SerialViews\SerialPage.xaml.cs">
+      <DependentUpon>SerialPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SerialViews\SerialDetailsPage.xaml.cs">
+      <DependentUpon>SerialDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UzytkownikViews\EditUzytkownikPage.xaml.cs">
+      <DependentUpon>EditUzytkownikPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UzytkownikViews\NewUzytkownikPage.xaml.cs">
+      <DependentUpon>NewUzytkownikPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UzytkownikViews\UzytkownikPage.xaml.cs">
+      <DependentUpon>UzytkownikPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UzytkownikViews\UzytkownikDetailPage.xaml.cs">
+      <DependentUpon>UzytkownikDetailPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

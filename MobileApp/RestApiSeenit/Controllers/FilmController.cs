@@ -61,14 +61,15 @@ namespace RestApiSeenit.Controllers
         // PUT: api/Film/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutFilm(int id, FilmForView film)
+        public async Task<IActionResult> PutOrder(int id, FilmForView film)
         {
             if (id != film.Id)
             {
                 return BadRequest();
             }
-            FilmForView filmToChange = film;
-            _context.Entry(filmToChange).State = EntityState.Modified;
+            var fil = await _context.Films.FindAsync(id);
+            fil.CopyProperties(film);
+            _context.Entry(fil).State = EntityState.Modified;
 
             try
             {
@@ -117,6 +118,7 @@ namespace RestApiSeenit.Controllers
 
             return Ok(film);
         }
+        
 
         // DELETE: api/Film/5
         [HttpDelete("{id}")]

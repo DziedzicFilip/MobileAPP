@@ -4,6 +4,8 @@
        xmlns:local="clr-namespace:SeenIT.Views"
        xmlns:localFilm="clr-namespace:SeenIT.Views.FilmViews"
        xmlns:localRodzaj="clr-namespace:SeenIT.Views.RodzajViews"
+       xmlns:localUzytkownik="clr-namespace:SeenIT.Views.UzytkownikViews"
+       xmlns:localSerial="clr-namespace:SeenIT.Views.SerialViews"
        Title="SeenIT"
        x:Class="SeenIT.AppShell">
 
@@ -98,10 +100,15 @@
     <FlyoutItem Title="Filmy">
         <ShellContent Route="FilmPage" ContentTemplate="{DataTemplate localFilm:FilmPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Seriale">
+        <ShellContent Route="SerialPage" ContentTemplate="{DataTemplate localSerial:SerialPage}" />
+    </FlyoutItem>
     <FlyoutItem Title="Rodzaje">
         <ShellContent Route="RodzajPage" ContentTemplate="{DataTemplate localRodzaj:RodzajPage}" />
     </FlyoutItem>
-
+    <FlyoutItem Title="Uzytkownicy">
+        <ShellContent Route="UzytkownikPage" ContentTemplate="{DataTemplate localUzytkownik:UzytkownikPage}" />
+    </FlyoutItem>
 
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

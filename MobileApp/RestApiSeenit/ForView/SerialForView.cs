@@ -15,10 +15,14 @@ namespace RestApiSeenit.ForView
         public string? Opis { get; set; }
         [Column(TypeName = "date")]
         public DateTime? DataStartu { get; set; }
+        public string? RodzajData { get; set; } = default!;
         public int? RodzajId { get; set; }
         public static implicit operator Serial(SerialForView item)
             => new Serial().CopyProperties(item);
         public static implicit operator SerialForView(Serial item)
-            => new SerialForView().CopyProperties(item);
+            => new SerialForView()
+            {
+                RodzajData = item.Rodzaj?.Nazwa ?? string.Empty
+            }.CopyProperties(item);
     }
 }

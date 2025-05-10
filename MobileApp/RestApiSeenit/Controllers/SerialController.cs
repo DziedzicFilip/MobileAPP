@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestApiSeenit.ForView;
+using RestApiSeenit.Helpers;
 using RestApiSeenit.Models;
 using RestApiSeenit.Models.Contexts;
 
@@ -30,9 +31,10 @@ namespace RestApiSeenit.Controllers
           {
               return NotFound();
           }
-            return (await _context.Serials.ToListAsync())
-              .Select(cli => (SerialForView)cli)
-              .ToList();
+            return (await _context.Serials.Include(cli => cli.Rodzaj)
+                .ToListAsync())
+                .Select(cli => (SerialForView)cli)
+                .ToList();
         }
 
         // GET: api/Serial/5
@@ -62,8 +64,10 @@ namespace RestApiSeenit.Controllers
             {
                 return BadRequest();
             }
-            Serial serialToChange = serial;
+            var serialToChange = await _context.Serials.FindAsync(id);
+            serialToChange.CopyProperties(serial);
             _context.Entry(serialToChange).State = EntityState.Modified;
+
 
             try
             {
@@ -89,15 +93,28 @@ namespace RestApiSeenit.Controllers
         [HttpPost]
         public async Task<ActionResult<SerialForView>> PostSerial(SerialForView serial)
         {
-          if (_context.Serials == null)
-          {
-              return Problem("Entity set 'FilmyContext.Serials'  is null.");
-          }
-            Serial serialToChange = serial;
-            _context.Serials.Add(serialToChange);
-            await _context.SaveChangesAsync();
+            if (_context.Serials == null)
+            {
+                return Problem("Entity set 'FilmyContext.Serials'  is null.");
+            }
+            _context.Serials.Add(serial);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (SerialExists(serial.Id))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-            return CreatedAtAction("GetSerial", new { id = serial.Id }, serial);
+            return Ok(serial);
         }
 
         // DELETE: api/Serial/5
