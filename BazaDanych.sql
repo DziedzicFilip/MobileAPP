@@ -1,4 +1,3 @@
-
 CREATE TABLE Uzytkownik (
     Id INT PRIMARY KEY IDENTITY,
     Email NVARCHAR(100) NOT NULL UNIQUE,
@@ -17,6 +16,7 @@ CREATE TABLE Film (
     Tytul NVARCHAR(150) NOT NULL,
     Opis TEXT,
     DataPremiery DATE,
+    UrlFoto NVARCHAR(50) Default 'def.png',
     RodzajId INT FOREIGN KEY REFERENCES Rodzaj(Id)
 );
 
@@ -26,6 +26,7 @@ CREATE TABLE Serial (
     Tytul NVARCHAR(150) NOT NULL,
     Opis TEXT,
     DataStartu DATE,
+    UrlFoto NVARCHAR(50) Default 'def.png',
     RodzajId INT FOREIGN KEY REFERENCES Rodzaj(Id)
 );
 
