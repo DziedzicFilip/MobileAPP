@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"  
+             x:Class="SeenIT.Views.FilmViews.NewFilmPage"
+             x:Name="BrowseItemsPage"
+             >
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="3" Padding="15">
+            <Label Text="RodzajID" FontSize="Medium" />
+            
+            <Picker Title="Wybierz Rodzaj" ItemsSource="{Binding Rodzaje}" 
+            ItemDisplayBinding="{Binding Nazwa}" 
+            SelectedItem="{Binding SelectedRodzaj}" 
+            FontSize="Medium" Margin="0" />
+            <Label Text="Tytuł" FontSize="Medium" />
+            <Editor Text="{Binding Tytul, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Opis" FontSize="Medium" />
+            <Editor Text="{Binding Opis, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Data Premiery" FontSize="Medium" />
+            <DatePicker Date="{Binding DataPremiery, Mode=TwoWay}" FontSize="Medium" />
+            <Label Text="UrlFoto" FontSize="Medium" />
+            <Editor Text="{Binding UrlFoto, Mode=TwoWay}" FontSize="Medium"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Anuluj" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Zapisz" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

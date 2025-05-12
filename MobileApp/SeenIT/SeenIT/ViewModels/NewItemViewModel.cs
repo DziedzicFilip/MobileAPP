@@ -1,4 +1,5 @@
 ﻿using SeenIT.Models;
+using SeenIT.ViewModels.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -51,12 +52,12 @@ namespace SeenIT.ViewModels
         {
             Item newItem = new Item()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = 1,
                 Text = Text,
                 Description = Description
             };
 
-            await DataStore.AddItemAsync(newItem);
+           // await DataStore.AddItemAsync(newItem);
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");

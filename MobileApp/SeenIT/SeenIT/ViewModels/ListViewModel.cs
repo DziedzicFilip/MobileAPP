@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using SeenIT.ViewModels.Abstract;
+using SeenIT.Views.FilmViews;
 
 namespace SeenIT.ViewModels
 {
@@ -23,7 +25,7 @@ namespace SeenIT.ViewModels
         }
         public async void OnListClicked(object obj)
         {
-            await Shell.Current.GoToAsync($"//{nameof(ListPage)}");
+            await Shell.Current.GoToAsync($"//{nameof(FilmPage)}");
         }
         public async void OnHomeClicked(object obj)
         {

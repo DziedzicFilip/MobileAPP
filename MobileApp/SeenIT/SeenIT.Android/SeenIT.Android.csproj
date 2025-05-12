@@ -110,7 +110,7 @@
     <AndroidResource Include="Resources\drawable\Devil_May_Cry.jpg" />
     <AndroidResource Include="Resources\drawable\dojrzewanie.jpg" />
     <AndroidResource Include="Resources\drawable\LegendaOchi.3.jpg" />
-    <AndroidResource Include="Resources\drawable\Minecraft.jpg" />
+    <AndroidResource Include="Resources\drawable\mc.jpg" />
     <AndroidResource Include="Resources\drawable\screamboat.jpg" />
     <AndroidResource Include="Resources\drawable\SW3.jpg" />
   </ItemGroup>
@@ -124,6 +124,23 @@
     <AndroidResource Include="Resources\drawable\home.png" />
     <AndroidResource Include="Resources\drawable\list.png" />
     <AndroidResource Include="Resources\drawable\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\def.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\film_icon.png" />
+    <AndroidResource Include="Resources\drawable\profile_icon.png" />
+    <AndroidResource Include="Resources\drawable\rodzaje_icon.png" />
+    <AndroidResource Include="Resources\drawable\serial_icon.png" />
+    <AndroidResource Include="Resources\drawable\settings_icon.png" />
+    <AndroidResource Include="Resources\drawable\uzytkownicy_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

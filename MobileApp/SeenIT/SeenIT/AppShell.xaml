@@ -2,6 +2,10 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:SeenIT.Views"
+       xmlns:localFilm="clr-namespace:SeenIT.Views.FilmViews"
+       xmlns:localRodzaj="clr-namespace:SeenIT.Views.RodzajViews"
+       xmlns:localUzytkownik="clr-namespace:SeenIT.Views.UzytkownikViews"
+       xmlns:localSerial="clr-namespace:SeenIT.Views.SerialViews"
        Title="SeenIT"
        x:Class="SeenIT.AppShell">
 
@@ -84,18 +88,25 @@
     <FlyoutItem Title="Browse" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Settings" >
+    <FlyoutItem Title="Settings" Icon="settings_icon.png" >
         <ShellContent Route="SettingPage" ContentTemplate="{DataTemplate local:SettingPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Profile" >
+    <FlyoutItem Title="Profile" Icon="profile_icon.png" >
         <ShellContent  ContentTemplate="{DataTemplate local:ProfilePage}" Route="ProfilePage" />
     </FlyoutItem>
-    <FlyoutItem Title="My List">
-        <ShellContent Route="ListPage" ContentTemplate="{DataTemplate local:ListPage}" />
+    <FlyoutItem Title="Filmy" Icon="film_icon.png">
+        <ShellContent Route="FilmPage" ContentTemplate="{DataTemplate localFilm:FilmPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Seriale" Icon="serial_icon.png">
+        <ShellContent Route="SerialPage" ContentTemplate="{DataTemplate localSerial:SerialPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Rodzaje" Icon="rodzaje_icon.png">
+        <ShellContent Route="RodzajPage" ContentTemplate="{DataTemplate localRodzaj:RodzajPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Uzytkownicy" Icon="uzytkownicy_icon.png">
+        <ShellContent Route="UzytkownikPage" ContentTemplate="{DataTemplate localUzytkownik:UzytkownikPage}" />
     </FlyoutItem>
 
-    
-  
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">

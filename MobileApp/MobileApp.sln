@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
+VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeenIT.UWP", "SeenIT\SeenIT.UWP\SeenIT.UWP.csproj", "{1249930A-E6E1-438F-9FE6-8A60DFDF2668}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeenIT.iOS", "SeenIT\SeenIT.iOS\SeenIT.iOS.csproj", "{F10A2F40-0904-46F2-BA5E-2A89100F200B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeenIT", "SeenIT\SeenIT\SeenIT.csproj", "{26157683-BB5B-4B5B-8B05-B4CCBCE9EC5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiSeenit", "RestApiSeenit\RestApiSeenit.csproj", "{AB8AD33B-7913-4026-BD0E-3B45908D8B38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,18 @@ Global
 		{26157683-BB5B-4B5B-8B05-B4CCBCE9EC5F}.Release|x64.Build.0 = Release|Any CPU
 		{26157683-BB5B-4B5B-8B05-B4CCBCE9EC5F}.Release|x86.ActiveCfg = Release|Any CPU
 		{26157683-BB5B-4B5B-8B05-B4CCBCE9EC5F}.Release|x86.Build.0 = Release|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Debug|ARM.Build.0 = Debug|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Debug|x64.Build.0 = Debug|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Debug|x86.Build.0 = Debug|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Release|ARM.Build.0 = Release|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Release|x64.ActiveCfg = Release|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Release|x64.Build.0 = Release|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Release|x86.ActiveCfg = Release|Any CPU
+		{AB8AD33B-7913-4026-BD0E-3B45908D8B38}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

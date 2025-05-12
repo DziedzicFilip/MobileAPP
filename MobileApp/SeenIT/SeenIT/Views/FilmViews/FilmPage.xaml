@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeenIT.Views.FilmViews.FilmPage"
+             xmlns:vm="clr-namespace:SeenIT.ViewModels.FilmVM"
+             xmlns:model="clr-namespace:SeenIT.ServiceReference"
+             xmlns:local="clr-namespace:SeenIT.ViewModels.FilmVM"
+             x:Name="FilmGridPage"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#FFCC00</Color>
+            <Color x:Key="Primary">#FF9500</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Dodaj" Command="{Binding AddItemCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+        <RefreshView x:DataType="local:FilmViewModel"
+                     Grid.Row="0"
+                     Command="{Binding LoadItemsCommand}"
+                     IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <ScrollView>
+                <StackLayout Padding="20" Spacing="20">
+                    <Entry Placeholder="Szukaj filmu..." />
+
+                    <Label Text="Filmy" FontSize="Title" />
+
+                    <CollectionView ItemsSource="{Binding Items}"
+                                    ItemsLayout="VerticalGrid, 2"
+                                    SelectionMode="None">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="model:FilmForView">
+                                <StackLayout Padding="10" Spacing="10">
+                                    <Image Source="{Binding UrlFoto}"
+                                           HeightRequest="200"
+                                           Aspect="AspectFill" />
+                                    <Label Text="{Binding Tytul}" 
+                                           FontSize="Medium"
+                                           HorizontalOptions="Center" 
+                                           FontAttributes="Bold" />
+                                    <Label Text="{Binding DataPremiery, StringFormat='Premiera: {0:yyyy-MM-dd}'}"
+                                           FontSize="Small"
+                                           HorizontalOptions="Center" />
+                                    <Label Text="{Binding RodzajData, StringFormat='Gatunek: {0}'}"
+                                           FontSize="Small"
+                                           HorizontalOptions="Center" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            NumberOfTapsRequired="1"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type local:FilmViewModel}}, Path=ItemTapped}"		
+                                            CommandParameter="{Binding .}">
+                                        </TapGestureRecognizer>
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
+
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="{StaticResource Primary}" Padding="10" HorizontalOptions="FillAndExpand">
+            <Button Command="{Binding HomeCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="home.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding ListCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="list.png" />
+                </Button.ImageSource>
+            </Button>
+            <Button Command="{Binding ProfileCommand}" HorizontalOptions="CenterAndExpand">
+                <Button.ImageSource>
+                    <FileImageSource File="user2.png" />
+                </Button.ImageSource>
+            </Button>
+        </StackLayout>
+    </Grid>
+</ContentPage>

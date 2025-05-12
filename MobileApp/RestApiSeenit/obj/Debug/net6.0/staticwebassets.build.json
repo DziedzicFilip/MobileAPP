@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "07utzbnZzta5FiTFKN1tayXlzT27JMkeGGsPVvPhA3M=",
+  "Source": "RestApiSeenit",
+  "BasePath": "_content/RestApiSeenit",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

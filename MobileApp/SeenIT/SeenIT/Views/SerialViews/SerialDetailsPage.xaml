@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeenIT.Views.SerialViews.SerialDetailPage"
+             xmlns:model="clr-namespace:SeenIT.ServiceReference"
+             xmlns:local="clr-namespace:SeenIT.ViewModels.SerialVM">
+
+    <ContentPage.Content>
+        <!-- Główna zawartość -->
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="10" Spacing="10">
+                <Grid ColumnSpacing="10" RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Obraz Serialu -->
+                    <Image Source="{Binding UrlFoto, Mode=TwoWay}" HeightRequest="300" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" />
+
+                    <!-- Tytuł Serialu -->
+                    <Label Text="{Binding Tytul, Mode=TwoWay}" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" />
+
+                    <!-- Opis Serialu -->
+                    <ScrollView Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+                        <Label Text="{Binding Opis, Mode=TwoWay}" 
+                       FontSize="16" HorizontalOptions="Center" />
+                    </ScrollView>
+                    <Button Text="Dodaj recenzję" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0" />
+                    <Button Text="Dodaj do obejrzanych" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1" />
+                    <Label Text="Data premiery"
+                       FontSize="18"
+                       HorizontalOptions="Center" FontAttributes="Bold"
+                           Grid.Row="3" Grid.Column="0"/>
+                    <Label Text="{Binding DataStartu, Mode=TwoWay, StringFormat='{0:yyyy-MM-dd}'}"
+                       FontSize="14"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                           Grid.Row="3" Grid.Column="1"/>
+                    <Label Text="Gatunek: "
+                       FontSize="18"
+                       HorizontalOptions="Center" FontAttributes="Bold"
+                           Grid.Row="4" Grid.Column="0"/>
+                    <Label Text="{Binding RodzajData, Mode=TwoWay}"
+                       FontSize="14"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                           Grid.Row="4" Grid.Column="1"/>
+                    <Button Text="Edytuj" Command="{Binding UpdateCommand}" HorizontalOptions="Center" Grid.Row="5" Grid.Column="0" />
+                    <Button Text="Usun" Command="{Binding DeleteCommand}" HorizontalOptions="Center" Grid.Row="5" Grid.Column="1" />
+
+                    <!-- Statystyki Serialu
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Update" Command="{Binding UpdateCommand}" HorizontalOptions="FillAndExpand"></Button>
+                        <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+                        <Button Text="Delete" Command="{Binding DeleteCommand}" HorizontalOptions="FillAndExpand"></Button>
+                    </StackLayout> -->
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
