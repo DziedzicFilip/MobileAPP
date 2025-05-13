@@ -19045,7 +19045,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "GmkKfoyerqmsHMn7OZj0AKpcBabD+GaafqphvX2Mw406IwiJRy1pKcKqdCfKJfYmkRyJ6+e+RaUylgdJoDa1jQ==",
+      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
@@ -26902,27 +26902,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dzied\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
+      "projectUniqueName": "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
       "projectName": "SeenIT.UWP",
-      "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
-      "packagesPath": "C:\\Users\\dzied\\.nuget\\packages\\",
-      "outputPath": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\obj\\",
+      "projectPath": "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dzied\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -26936,8 +26934,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj": {
-              "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj"
+            "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj": {
+              "projectPath": "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj"
             }
           }
         }
@@ -27000,7 +26998,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.Collections from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Dynamic.Runtime 4.0.11 -> System.ObjectModel 4.3.0 -> System.Collections (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Collections (>= 4.0.11)",
+      "message": "Wykryto obniżenie wersji pakietu: System.Collections z 4.3.0 na 4.0.11. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Dynamic.Runtime 4.0.11 -> System.ObjectModel 4.3.0 -> System.Collections (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Collections (>= 4.0.11)",
       "libraryId": "System.Collections",
       "targetGraphs": [
         "UAP,Version=v10.0.16299/win10-arm",
@@ -27016,7 +27014,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Dynamic.Runtime 4.0.11 -> System.ObjectModel 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Diagnostics.Debug (>= 4.0.11)",
+      "message": "Wykryto obniżenie wersji pakietu: System.Diagnostics.Debug z 4.3.0 na 4.0.11. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Dynamic.Runtime 4.0.11 -> System.ObjectModel 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Diagnostics.Debug (>= 4.0.11)",
       "libraryId": "System.Diagnostics.Debug",
       "targetGraphs": [
         "UAP,Version=v10.0.16299/win10-arm",
@@ -27028,7 +27026,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.IO.FileSystem.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.IO.FileSystem.Primitives (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> System.IO.FileSystem.Primitives (>= 4.0.1)",
+      "message": "Wykryto obniżenie wersji pakietu: System.IO.FileSystem.Primitives z 4.3.0 na 4.0.1. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.IO.FileSystem.Primitives (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> System.IO.FileSystem.Primitives (>= 4.0.1)",
       "libraryId": "System.IO.FileSystem.Primitives",
       "targetGraphs": [
         "UAP,Version=v10.0.16299/win10-arm",
@@ -27044,7 +27042,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.Runtime.Extensions from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.Extensions (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Runtime.Extensions (>= 4.1.0)",
+      "message": "Wykryto obniżenie wersji pakietu: System.Runtime.Extensions z 4.3.0 na 4.1.0. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.Extensions (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Runtime.Extensions (>= 4.1.0)",
       "libraryId": "System.Runtime.Extensions",
       "targetGraphs": [
         "UAP,Version=v10.0.16299/win10-arm",
@@ -27056,7 +27054,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.Runtime.Handles from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.Handles (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> System.Runtime.Handles (>= 4.0.1)",
+      "message": "Wykryto obniżenie wersji pakietu: System.Runtime.Handles z 4.3.0 na 4.0.1. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.Handles (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> System.Runtime.Handles (>= 4.0.1)",
       "libraryId": "System.Runtime.Handles",
       "targetGraphs": [
         "UAP,Version=v10.0.16299/win10-arm",
@@ -27072,7 +27070,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.Runtime.InteropServices from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.InteropServices (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Runtime.InteropServices (>= 4.1.0)",
+      "message": "Wykryto obniżenie wersji pakietu: System.Runtime.InteropServices z 4.3.0 na 4.1.0. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.InteropServices (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Runtime.InteropServices (>= 4.1.0)",
       "libraryId": "System.Runtime.InteropServices",
       "targetGraphs": [
         "UAP,Version=v10.0.16299/win10-arm",
@@ -27088,7 +27086,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Dynamic.Runtime 4.0.11 -> System.Diagnostics.Debug (>= 4.0.11)",
+      "message": "Wykryto obniżenie wersji pakietu: System.Diagnostics.Debug z 4.3.0 na 4.0.11. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Dynamic.Runtime 4.0.11 -> System.Diagnostics.Debug (>= 4.0.11)",
       "libraryId": "System.Diagnostics.Debug",
       "targetGraphs": [
         "UAP,Version=v10.0.16299/win10-arm-aot",
@@ -27101,7 +27099,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.Linq from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Linq (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Dynamic.Runtime 4.0.11 -> System.Linq (>= 4.1.0)",
+      "message": "Wykryto obniżenie wersji pakietu: System.Linq z 4.3.0 na 4.1.0. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> Microsoft.DotNet.PlatformAbstractions 2.1.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Linq (>= 4.3.0) \r\n SeenIT.UWP -> SeenIT -> Microsoft.AspNetCore.Mvc.DataAnnotations 2.3.0 -> Microsoft.AspNetCore.Mvc.Core 2.3.0 -> Microsoft.Extensions.DependencyModel 2.1.0 -> System.Dynamic.Runtime 4.0.11 -> System.Linq (>= 4.1.0)",
       "libraryId": "System.Linq",
       "targetGraphs": [
         "UAP,Version=v10.0.16299/win10-arm-aot",

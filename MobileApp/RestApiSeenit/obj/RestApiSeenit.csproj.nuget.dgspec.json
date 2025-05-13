@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\RestApiSeenit\\RestApiSeenit.csproj": {}
+    "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\RestApiSeenit\\RestApiSeenit.csproj": {}
   },
   "projects": {
-    "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\RestApiSeenit\\RestApiSeenit.csproj": {
+    "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\RestApiSeenit\\RestApiSeenit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\RestApiSeenit\\RestApiSeenit.csproj",
+        "projectUniqueName": "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\RestApiSeenit\\RestApiSeenit.csproj",
         "projectName": "RestApiSeenit",
-        "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\RestApiSeenit\\RestApiSeenit.csproj",
-        "packagesPath": "C:\\Users\\dzied\\.nuget\\packages\\",
-        "outputPath": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\RestApiSeenit\\obj\\",
+        "projectPath": "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\RestApiSeenit\\RestApiSeenit.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\Studia\\Mobile\\MobileAPP\\MobileApp\\RestApiSeenit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dzied\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

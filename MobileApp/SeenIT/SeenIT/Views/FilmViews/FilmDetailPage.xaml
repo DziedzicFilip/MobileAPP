@@ -81,9 +81,9 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="3*" />
                             </Grid.ColumnDefinitions>
-                            <Label Text="Autor" FontAttributes="Bold" Grid.Column="0" />
+                            <Label Text="UżytkownikId" FontAttributes="Bold" Grid.Column="0" />
                             <Label Text="Ocena" FontAttributes="Bold" Grid.Column="1" />
-                            <Label Text="Komentarz" FontAttributes="Bold" Grid.Column="2" />
+                            <Label Text="Treść" FontAttributes="Bold" Grid.Column="2" />
                         </Grid>
                     </ListView.Header>
                     <ListView.ItemTemplate>
@@ -95,14 +95,15 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="3*" />
                                     </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding Autor}" Grid.Column="0" />
+                                    <Label Text="{Binding UzytkownikId}" Grid.Column="0" />
                                     <Label Text="{Binding Ocena}" Grid.Column="1" />
-                                    <Label Text="{Binding Komentarz}" Grid.Column="2" />
+                                    <Label Text="{Binding Tresc}" Grid.Column="2" />
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

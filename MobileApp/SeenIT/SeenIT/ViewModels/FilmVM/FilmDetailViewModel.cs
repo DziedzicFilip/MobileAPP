@@ -5,6 +5,7 @@ using SeenIT.ViewModels.Abstract;
 using SeenIT.Views.FilmViews;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Net.Sockets;
 using System.Text;
@@ -63,6 +64,11 @@ namespace SeenIT.ViewModels.FilmVM
         }
         //public string DataPremieryText => DataPremiery.ToString("yyyy-MM-dd") ?? "Brak daty";
         public ICommand DodajRecenzjeCommand { get; }
+        public ObservableCollection<RecenzjaFilmuForView> Recenzje { get; set; } = new ObservableCollection<RecenzjaFilmuForView>();
+
+        public Command LoadRecenzjeCommand { get; }
+
+
         #endregion
         public FilmDetailViewModel()
             : base("Film details")
@@ -89,6 +95,7 @@ namespace SeenIT.ViewModels.FilmVM
                 var item = await DataStore.GetItemAsync(id);
                 //Debug.WriteLine($"[DEBUG] Pobrano film ID: {item.Id}, Tytul: {item.Tytul}, DataPremiery: {item.DataPremiery}");
                 this.CopyProperties(item);
+                Device.BeginInvokeOnMainThread(async () => await LoadRecenzje());
             }
             catch (Exception)
             {
@@ -100,5 +107,26 @@ namespace SeenIT.ViewModels.FilmVM
             // Przejście do strony dodawania recenzji z ID filmu
             await Shell.Current.GoToAsync($"///AddReviewPage?filmId={filmId}");
         }
+        private async Task LoadRecenzje()
+        {
+            if (IsBusy) return;
+            IsBusy = true;
+            try
+            {
+                Recenzje.Clear();
+                var dataStore = DependencyService.Get<RecenzjaFilmuDataStore>();
+                var all = await Task.Run(() => dataStore.GetItemsAsync(true)); // pobieranie w tle
+                foreach (var rec in all)
+                {
+                    if (rec.FilmId == this.Id)
+                        Recenzje.Add(rec);
+                }
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
     }
 }

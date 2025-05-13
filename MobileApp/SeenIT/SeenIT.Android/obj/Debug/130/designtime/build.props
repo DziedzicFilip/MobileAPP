@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638826591007517335
+_nugetassetstimestamp=638827529539792583
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=d:\studia\mobilne\mobileapp\mobileapp\seenit\seenit.android\seenit.android.csproj
+projectfullpath=d:\studia\mobile\mobileapp\mobileapp\seenit\seenit.android\seenit.android.csproj

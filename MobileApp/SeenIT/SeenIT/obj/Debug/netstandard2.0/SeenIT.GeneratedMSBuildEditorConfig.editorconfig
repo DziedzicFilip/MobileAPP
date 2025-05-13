@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = SeenIT
-build_property.ProjectDir = D:\Studia\Mobilne\MobileAPP\MobileApp\SeenIT\SeenIT\
+build_property.ProjectDir = D:\Studia\Mobile\MobileAPP\MobileApp\SeenIT\SeenIT\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
