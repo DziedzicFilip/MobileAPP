@@ -14,7 +14,7 @@ androidlinkskip=
 androidsdkbuildtoolsversion=32.0.0
 androidsdkpath=c:\program files (x86)\android\android-sdk\
 androidndkpath=
-javasdkpath=c:\program files\java\jdk-17\
+javasdkpath=c:\program files (x86)\android\openjdk\jdk-17.0.12\
 androidsequencepointsmode=none
 xamarinandroidversion=13.2.2-0
 monosymbolarchive=false
@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638823238449053831
+_nugetassetstimestamp=638826591007517335
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\damian\source\repos\mobileapp2\mobileapp\seenit\seenit.android\seenit.android.csproj
+projectfullpath=d:\studia\mobilne\mobileapp\mobileapp\seenit\seenit.android\seenit.android.csproj

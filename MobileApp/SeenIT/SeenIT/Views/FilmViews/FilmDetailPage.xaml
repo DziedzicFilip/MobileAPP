@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SeenIT.Views.FilmViews.FilmDetailPage"
              xmlns:model="clr-namespace:SeenIT.ServiceReference"
-             xmlns:local="clr-namespace:SeenIT.ViewModels.FilmVM">
+             xmlns:local="clr-namespace:SeenIT.ViewModels.FilmVM"
+                x:Name="PageRoot">
 
     <ContentPage.Content>
         <!-- Główna zawartość -->
@@ -34,7 +35,12 @@
                         <Label Text="{Binding Opis, Mode=TwoWay}" 
                        FontSize="16" HorizontalOptions="Center" />
                     </ScrollView>
-                    <Button Text="Dodaj recenzję" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0" />
+                    <Button Text="Dodaj recenzję"
+        Command="{Binding BindingContext.DodajRecenzjeCommand, Source={x:Reference PageRoot}}"
+        CommandParameter="{Binding Id}"
+        HorizontalOptions="Center"
+        Grid.Row="2"
+        Grid.Column="0" />
                     <Button Text="Dodaj do obejrzanych" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1" />
                     <Label Text="Data premiery"
                        FontSize="18"
@@ -56,7 +62,9 @@
                            Grid.Row="4" Grid.Column="1"/>
                     <Button Text="Edytuj" Command="{Binding UpdateCommand}" HorizontalOptions="Center" Grid.Row="5" Grid.Column="0" />
                     <Button Text="Usun" Command="{Binding DeleteCommand}" HorizontalOptions="Center" Grid.Row="5" Grid.Column="1" />
+                   
 
+                    
                     <!-- Statystyki filmu
                     <StackLayout Orientation="Horizontal">
                         <Button Text="Update" Command="{Binding UpdateCommand}" HorizontalOptions="FillAndExpand"></Button>
@@ -64,6 +72,37 @@
                         <Button Text="Delete" Command="{Binding DeleteCommand}" HorizontalOptions="FillAndExpand"></Button>
                     </StackLayout> -->
                 </Grid>
+                 <Label Text="Recenzje" FontSize="20" FontAttributes="Bold" Margin="0,20,0,10" />
+                <ListView ItemsSource="{Binding Recenzje}" HasUnevenRows="True" SeparatorVisibility="Default">
+                    <ListView.Header>
+                        <Grid Padding="5" BackgroundColor="#eeeeee">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Autor" FontAttributes="Bold" Grid.Column="0" />
+                            <Label Text="Ocena" FontAttributes="Bold" Grid.Column="1" />
+                            <Label Text="Komentarz" FontAttributes="Bold" Grid.Column="2" />
+                        </Grid>
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="3*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Autor}" Grid.Column="0" />
+                                    <Label Text="{Binding Ocena}" Grid.Column="1" />
+                                    <Label Text="{Binding Komentarz}" Grid.Column="2" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

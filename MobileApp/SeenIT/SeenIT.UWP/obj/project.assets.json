@@ -26902,18 +26902,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Damian\\.nuget\\packages\\": {},
+    "C:\\Users\\dzied\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
+      "projectUniqueName": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
       "projectName": "SeenIT.UWP",
-      "projectPath": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
-      "packagesPath": "C:\\Users\\Damian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT.UWP\\obj\\",
+      "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\SeenIT.UWP.csproj",
+      "packagesPath": "C:\\Users\\dzied\\.nuget\\packages\\",
+      "outputPath": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -26922,7 +26922,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Damian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dzied\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -26936,8 +26936,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj": {
-              "projectPath": "C:\\Users\\Damian\\Source\\Repos\\MobileAPP2\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj"
+            "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj": {
+              "projectPath": "D:\\Studia\\Mobilne\\MobileAPP\\MobileApp\\SeenIT\\SeenIT\\SeenIT.csproj"
             }
           }
         }

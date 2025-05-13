@@ -106,6 +106,9 @@
     <FlyoutItem Title="Uzytkownicy" Icon="uzytkownicy_icon.png">
         <ShellContent Route="UzytkownikPage" ContentTemplate="{DataTemplate localUzytkownik:UzytkownikPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Dodaj Recenzje" Icon="uzytkownicy_icon.png">
+        <ShellContent Route="AddReviewPage" ContentTemplate="{DataTemplate local:AddReview}" />
+       </FlyoutItem>
 
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

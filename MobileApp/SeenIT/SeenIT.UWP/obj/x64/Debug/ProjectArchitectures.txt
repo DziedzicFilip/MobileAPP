@@ -1,1 +1,1 @@
-C:\Users\Damian\Source\Repos\MobileAPP2\MobileApp\SeenIT\SeenIT.UWP\SeenIT.UWP.csproj;x64
+D:\Studia\Mobilne\MobileAPP\MobileApp\SeenIT\SeenIT.UWP\SeenIT.UWP.csproj;x64

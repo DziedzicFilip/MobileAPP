@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace SeenIT.ViewModels.FilmVM
@@ -61,10 +62,12 @@ namespace SeenIT.ViewModels.FilmVM
             set => SetProperty(ref dataPremiery, value);
         }
         //public string DataPremieryText => DataPremiery.ToString("yyyy-MM-dd") ?? "Brak daty";
+        public ICommand DodajRecenzjeCommand { get; }
         #endregion
         public FilmDetailViewModel()
             : base("Film details")
         {
+            DodajRecenzjeCommand = new Command<int>(OnDodajRecenzje);
         }
         protected override async Task GoToUpdatePage()
         {
@@ -91,6 +94,11 @@ namespace SeenIT.ViewModels.FilmVM
             {
                 Debug.WriteLine("Failed to Load Item");
             }
+        }
+        private async void OnDodajRecenzje(int filmId)
+        {
+            // Przejście do strony dodawania recenzji z ID filmu
+            await Shell.Current.GoToAsync($"///AddReviewPage?filmId={filmId}");
         }
     }
 }
