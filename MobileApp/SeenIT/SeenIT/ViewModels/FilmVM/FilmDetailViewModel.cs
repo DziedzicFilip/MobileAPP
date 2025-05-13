@@ -68,12 +68,15 @@ namespace SeenIT.ViewModels.FilmVM
 
         public Command LoadRecenzjeCommand { get; }
 
+        public ICommand DodajDoObejrzanychCommand { get; }
+
 
         #endregion
         public FilmDetailViewModel()
             : base("Film details")
         {
             DodajRecenzjeCommand = new Command<int>(OnDodajRecenzje);
+            DodajDoObejrzanychCommand = new Command<int>(OnDodajDoObejrzanych);
         }
         protected override async Task GoToUpdatePage()
         {
@@ -126,6 +129,26 @@ namespace SeenIT.ViewModels.FilmVM
             {
                 IsBusy = false;
             }
+        }
+        private async void OnDodajDoObejrzanych(int filmId)
+        {
+            // Przykładowo pobierz ID użytkownika z sesji lub ustaw na sztywno
+            int uzytkownikId = 1; // TODO: pobierz prawidłowe ID użytkownika
+            var nowy = new ListaObejrzaneForView
+            {
+                FilmId = filmId,
+                UzytkownikId = uzytkownikId,
+                DataDodania = DateTime.Now
+            };
+
+            // Załóż, że masz DataStore lub serwis do obsługi obejrzanych
+            var dataStore = DependencyService.Get<IDataStore<ListaObejrzaneForView>>();
+            var result = await dataStore.AddItemAsync(nowy);
+
+            if (result)
+                await Application.Current.MainPage.DisplayAlert("Sukces", "Dodano do obejrzanych!", "OK");
+            else
+                await Application.Current.MainPage.DisplayAlert("Błąd", "Nie udało się dodać do obejrzanych.", "OK");
         }
 
     }

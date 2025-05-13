@@ -41,7 +41,12 @@
         HorizontalOptions="Center"
         Grid.Row="2"
         Grid.Column="0" />
-                    <Button Text="Dodaj do obejrzanych" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1" />
+                    <Button Text="Dodaj do obejrzanych"
+        Command="{Binding BindingContext.DodajDoObejrzanychCommand, Source={x:Reference PageRoot}}"
+        CommandParameter="{Binding Id}"
+        HorizontalOptions="Center"
+        Grid.Row="2"
+        Grid.Column="1" />
                     <Label Text="Data premiery"
                        FontSize="18"
                        HorizontalOptions="Center" FontAttributes="Bold"

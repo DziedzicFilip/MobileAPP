@@ -148,3 +148,4 @@ D:\Studia\Mobile\MobileAPP\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Xaml
 D:\Studia\Mobile\MobileAPP\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\SeenIT.dll
 D:\Studia\Mobile\MobileAPP\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\refint\SeenIT.dll
 D:\Studia\Mobile\MobileAPP\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\SeenIT.pdb
+D:\Studia\Mobile\MobileAPP\MobileApp\SeenIT\SeenIT\obj\Debug\netstandard2.0\Views\WatchedViews\WatchedView.xaml.g.cs
