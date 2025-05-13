@@ -6,6 +6,8 @@
        xmlns:localRodzaj="clr-namespace:SeenIT.Views.RodzajViews"
        xmlns:localUzytkownik="clr-namespace:SeenIT.Views.UzytkownikViews"
        xmlns:localSerial="clr-namespace:SeenIT.Views.SerialViews"
+       xmlns:localWatched="clr-namespace:SeenIT.Views.WatchedViews"
+
        Title="SeenIT"
        x:Class="SeenIT.AppShell">
 
@@ -109,6 +111,10 @@
     <FlyoutItem Title="Dodaj Recenzje" Icon="uzytkownicy_icon.png">
         <ShellContent Route="AddReviewPage" ContentTemplate="{DataTemplate local:AddReview}" />
        </FlyoutItem>
+    <FlyoutItem Title="Obejrzane" Icon="watched_icon.png">
+        <ShellContent Route="WatchedView" ContentTemplate="{DataTemplate localWatched:WatchedView}" />
+    </FlyoutItem>
+
 
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

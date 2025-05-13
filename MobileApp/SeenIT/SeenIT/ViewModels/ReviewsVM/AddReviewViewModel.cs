@@ -55,6 +55,7 @@ namespace SeenIT.ViewModels.ReviewsVM
                 Data = this.Data,
                 FilmId = filmId,
                 UzytkownikId = 1, 
+
             };
 
             var dataStore = DependencyService.Get<RecenzjaFilmuDataStore>();

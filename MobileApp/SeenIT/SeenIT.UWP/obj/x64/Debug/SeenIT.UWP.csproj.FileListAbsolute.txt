@@ -182,3 +182,5 @@ D:\Studia\Mobilne\MobileAPP\MobileApp\SeenIT\SeenIT.UWP\obj\x64\Debug\ProjectArc
 D:\Studia\Mobilne\MobileAPP\MobileApp\SeenIT\SeenIT.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160715180000000.json
 D:\Studia\Mobilne\MobileAPP\MobileApp\SeenIT\SeenIT.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638441383520000000.json
 D:\Studia\Mobilne\MobileAPP\MobileApp\SeenIT\SeenIT.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638441419520000000.json
+D:\Studia\Mobile\MobileAPP\MobileApp\SeenIT\SeenIT.UWP\obj\x64\Debug\SeenIT.UWP.exe
+D:\Studia\Mobile\MobileAPP\MobileApp\SeenIT\SeenIT.UWP\obj\x64\Debug\SeenIT.UWP.pdb

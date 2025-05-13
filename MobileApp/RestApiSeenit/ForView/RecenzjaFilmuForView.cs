@@ -16,9 +16,18 @@ namespace RestApiSeenit.ForView
         public DateTime? Data { get; set; }
         public int? UzytkownikId { get; set; }
         public int? FilmId { get; set; }
+        public string? Nick { get; set; } 
+
         public static implicit operator RecenzjaFilmu(RecenzjaFilmuForView item)
             => new RecenzjaFilmu().CopyProperties(item);
         public static implicit operator RecenzjaFilmuForView(RecenzjaFilmu item)
-            => new RecenzjaFilmuForView().CopyProperties(item);
+        {
+            var view = new RecenzjaFilmuForView().CopyProperties(item);
+           
+            if (item.Uzytkownik != null)
+                view.Nick = item.Uzytkownik.Nick;
+            return view;
+        }
     }
+
 }

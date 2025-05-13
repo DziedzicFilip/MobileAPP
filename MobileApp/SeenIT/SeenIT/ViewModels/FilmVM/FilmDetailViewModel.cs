@@ -133,7 +133,7 @@ namespace SeenIT.ViewModels.FilmVM
         private async void OnDodajDoObejrzanych(int filmId)
         {
             // Przykładowo pobierz ID użytkownika z sesji lub ustaw na sztywno
-            int uzytkownikId = 1; // TODO: pobierz prawidłowe ID użytkownika
+            int uzytkownikId = 1; 
             var nowy = new ListaObejrzaneForView
             {
                 FilmId = filmId,
