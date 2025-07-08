@@ -53,17 +53,5 @@ MobileAPP/
 - Edit and delete entries
 - Write your own reviews and ratings
 - Browse viewing history
-- (Planned) Synchronization with a custom API
+- Synchronization with a API
 
-## Contribution
-
-Suggestions and pull requests are welcome! Please report issues via the Issues tab.
-
-## License
-
-This project is available under the MIT license.
-
----
-
-**Author:** Filip Dziedzic  
-Repository: [DziedzicFilip/MobileAPP](https://github.com/DziedzicFilip/MobileAPP)
