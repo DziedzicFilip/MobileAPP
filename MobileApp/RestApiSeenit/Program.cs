@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using RestApiSeenit.Models;
 using RestApiSeenit.Models.Contexts;
 
 namespace RestApiSeenit
@@ -19,13 +20,18 @@ namespace RestApiSeenit
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            using (var scope = app.Services.CreateScope())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                var db = scope.ServiceProvider.GetRequiredService<FilmyContext>();
+               // db.Database.Migrate();
+                db.Seed();
             }
+
+
+
+            app.UseSwagger();
+            app.UseSwaggerUI();
+
 
             app.UseHttpsRedirection();
 

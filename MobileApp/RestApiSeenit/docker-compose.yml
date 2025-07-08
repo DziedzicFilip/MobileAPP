@@ -1,0 +1,47 @@
+﻿version: '3.9'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "SuperTajneHaslo!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlvolume:/var/opt/mssql
+  init-script:
+    image: mcr.microsoft.com/mssql-tools
+    depends_on:
+      - sqlserver
+    volumes:
+      - ./init.sql:/init.sql
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        echo "Czekam aż SQL Server wystartuje...";
+        sleep 20;
+        echo "Uruchamiam init.sql...";
+        /opt/mssql-tools/bin/sqlcmd -S sqlserver -U sa -P SuperTajneHaslo! -i /init.sql
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: seenit_api
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=YourStrongPassword!
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+      - ConnectionStrings__FilmyContext=Server=sqlserver;Database=SeenIT;User=sa;Password=SuperTajneHaslo!
+    ports:
+      - "7206:443"
+    volumes:
+      - ./https:/https:ro
+
+volumes:
+  sqlvolume:

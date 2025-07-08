@@ -20,6 +20,7 @@ namespace RestApiSeenit.Controllers
         public RecenzjaFilmuController(FilmyContext context)
         {
             _context = context;
+
         }
 
         // GET: api/RecenzjaFilmu
