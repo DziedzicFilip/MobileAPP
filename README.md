@@ -1,6 +1,6 @@
 # MobileAPP – SeenIT
 
-**MobileAPP (SeenIT)** is a mobile application written in C#, designed for the Android platform (with the possibility of expansion to iOS and UWP). The project serves to manage a list of watched movies, add your own reviews and ratings, and catalogue your movie collection.
+**MobileAPP (SeenIT)** is a mobile application written in C#, designed for the Android platform  The project serves to manage a list of watched movies, add your own reviews and ratings, and catalogue your movie collection.
 
 ## Description
 
